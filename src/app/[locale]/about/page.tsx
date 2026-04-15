@@ -1,63 +1,61 @@
 import { Target, Heart, Handshake } from "lucide-react";
 import CTABanner from "@/components/CTABanner";
+import {getTranslations} from "next-intl/server";
 
-const TEAM = [
-  {
-    name: "Elena Voss",
-    title: "Founder & Lead Strategist",
-    bio: "Former VP of Pricing at a $500M ARR SaaS company. 12 years of experience in B2B pricing strategy and monetization.",
-  },
-  {
-    name: "James Okonkwo",
-    title: "Senior Pricing Analyst",
-    bio: "Data scientist turned pricing specialist. Built pricing models for 80+ SaaS companies across fintech, DevTools, and MarTech.",
-  },
-  {
-    name: "Priya Sharma",
-    title: "Packaging & GTM Lead",
-    bio: "10 years in product marketing and go-to-market strategy. Expert in tier design, feature gating, and launch communication.",
-  },
-  {
-    name: "Daniel Kim",
-    title: "Research Director",
-    bio: "PhD in behavioral economics. Leads willingness-to-pay research and conjoint analysis for every client engagement.",
-  },
-];
+export default async function AboutPage() {
+  const t = await getTranslations('AboutPage');
 
-const VALUES = [
-  {
-    icon: Target,
-    title: "Evidence Over Intuition",
-    description:
-      "Every recommendation is backed by data — willingness-to-pay research, competitive benchmarking, and usage analytics. We don't guess.",
-  },
-  {
-    icon: Heart,
-    title: "Revenue Without Resentment",
-    description:
-      "Good pricing grows revenue and makes customers feel they're getting a fair deal. We optimize for long-term trust, not short-term extraction.",
-  },
-  {
-    icon: Handshake,
-    title: "Long-Term Partnership",
-    description:
-      "Pricing isn't a one-time project. We build ongoing relationships and return for pricing reviews as your product and market evolve.",
-  },
-];
+  const TEAM = [
+    {
+      name: t('team.elenaVoss.name'),
+      title: t('team.elenaVoss.title'),
+      bio: t('team.elenaVoss.bio'),
+    },
+    {
+      name: t('team.jamesOkonkwo.name'),
+      title: t('team.jamesOkonkwo.title'),
+      bio: t('team.jamesOkonkwo.bio'),
+    },
+    {
+      name: t('team.priyaSharma.name'),
+      title: t('team.priyaSharma.title'),
+      bio: t('team.priyaSharma.bio'),
+    },
+    {
+      name: t('team.danielKim.name'),
+      title: t('team.danielKim.title'),
+      bio: t('team.danielKim.bio'),
+    },
+  ];
 
-export default function AboutPage() {
+  const VALUES = [
+    {
+      icon: Target,
+      title: t('values.evidenceOverIntuition.title'),
+      description: t('values.evidenceOverIntuition.description'),
+    },
+    {
+      icon: Heart,
+      title: t('values.revenueWithoutResentment.title'),
+      description: t('values.revenueWithoutResentment.description'),
+    },
+    {
+      icon: Handshake,
+      title: t('values.longTermPartnership.title'),
+      description: t('values.longTermPartnership.description'),
+    },
+  ];
+
   return (
     <>
       {/* Mission */}
       <section className="bg-[var(--color-navy)]">
         <div className="mx-auto max-w-4xl px-6 py-20 text-center md:py-28">
           <h1 className="text-4xl font-bold tracking-tight text-[var(--color-white)] md:text-5xl">
-            About PriceLayer
+            {t('title')}
           </h1>
           <p className="mt-6 text-xl leading-relaxed text-[var(--color-gray-light)]">
-            We believe pricing is the most underleveraged growth lever in SaaS.
-            Most companies spend months on product and minutes on pricing.
-            We exist to change that.
+            {t('mission')}
           </p>
         </div>
       </section>
@@ -67,23 +65,19 @@ export default function AboutPage() {
         <div className="mx-auto max-w-7xl px-6 py-20 md:py-28">
           <div className="mx-auto max-w-3xl">
             <h2 className="text-3xl font-bold tracking-tight text-[var(--color-navy)]">
-              Our Approach
+              {t('approachHeading')}
             </h2>
             <div className="mt-8 space-y-6 text-lg leading-relaxed text-[var(--color-text-muted)]">
               <p>
-                PriceLayer combines rigorous quantitative research with deep SaaS domain expertise.
-                Every engagement starts with understanding your customers, your competitive landscape,
-                and your growth objectives.
+                {t('approachP1')}
               </p>
               <p>
-                We use a combination of <strong className="text-[var(--color-text)]">competitive benchmarking</strong>,{" "}
-                <strong className="text-[var(--color-text)]">willingness-to-pay research</strong>,{" "}
-                and <strong className="text-[var(--color-text)]">value metric analysis</strong> to design pricing
-                that aligns what you charge with the value your customers actually receive.
+                {t.rich('approachP2', {
+                  strong: (chunks) => <strong className="text-[var(--color-text)]">{chunks}</strong>,
+                })}
               </p>
               <p>
-                The result: higher conversion rates, better expansion revenue,
-                lower churn, and a pricing model that scales with your business.
+                {t('approachP3')}
               </p>
             </div>
           </div>
@@ -94,7 +88,7 @@ export default function AboutPage() {
       <section className="bg-[var(--color-light)]">
         <div className="mx-auto max-w-7xl px-6 py-20 md:py-28">
           <h2 className="text-center text-3xl font-bold tracking-tight text-[var(--color-navy)]">
-            Meet the Team
+            {t('teamHeading')}
           </h2>
           <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {TEAM.map((member) => (
@@ -122,7 +116,7 @@ export default function AboutPage() {
       <section className="bg-[var(--color-white)]">
         <div className="mx-auto max-w-7xl px-6 py-20 md:py-28">
           <h2 className="text-center text-3xl font-bold tracking-tight text-[var(--color-navy)]">
-            Our Values
+            {t('valuesHeading')}
           </h2>
           <div className="mt-16 grid gap-8 md:grid-cols-3">
             {VALUES.map((value) => (
@@ -143,8 +137,8 @@ export default function AboutPage() {
       </section>
 
       <CTABanner
-        headline="Want to work with us?"
-        buttonText="Get in Touch"
+        headline={t('ctaHeadline')}
+        buttonText={t('ctaButton')}
         buttonHref="/contact"
       />
     </>

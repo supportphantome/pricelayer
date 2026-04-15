@@ -2,39 +2,38 @@
 
 import { useState } from "react";
 import { CheckCircle2, Search, PenLine, Rocket } from "lucide-react";
-
-const ARR_RANGES = [
-  "Pre-revenue",
-  "$0 - $1M ARR",
-  "$1M - $5M ARR",
-  "$5M - $20M ARR",
-  "$20M - $100M ARR",
-  "$100M+ ARR",
-];
-
-const NEXT_STEPS = [
-  {
-    icon: Search,
-    title: "Free Diagnostic Call",
-    description:
-      "We review your current pricing model, identify quick wins, and assess the opportunity.",
-  },
-  {
-    icon: PenLine,
-    title: "Custom Proposal",
-    description:
-      "Based on the diagnostic, we build a tailored engagement plan with clear deliverables and timeline.",
-  },
-  {
-    icon: Rocket,
-    title: "Pricing Transformation",
-    description:
-      "We execute the strategy together — from research through design to rollout support.",
-  },
-];
+import { useTranslations } from "next-intl";
 
 export default function SignupPage() {
+  const t = useTranslations("SignupPage");
   const [submitted, setSubmitted] = useState(false);
+
+  const ARR_RANGES = [
+    { value: "Pre-revenue", label: t("arr.preRevenue") },
+    { value: "$0 - $1M ARR", label: t("arr.0to1m") },
+    { value: "$1M - $5M ARR", label: t("arr.1to5m") },
+    { value: "$5M - $20M ARR", label: t("arr.5to20m") },
+    { value: "$20M - $100M ARR", label: t("arr.20to100m") },
+    { value: "$100M+ ARR", label: t("arr.100mPlus") },
+  ];
+
+  const NEXT_STEPS = [
+    {
+      icon: Search,
+      title: t("nextSteps.diagnostic.title"),
+      description: t("nextSteps.diagnostic.description"),
+    },
+    {
+      icon: PenLine,
+      title: t("nextSteps.proposal.title"),
+      description: t("nextSteps.proposal.description"),
+    },
+    {
+      icon: Rocket,
+      title: t("nextSteps.transformation.title"),
+      description: t("nextSteps.transformation.description"),
+    },
+  ];
 
   function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -46,10 +45,10 @@ export default function SignupPage() {
       <section className="bg-[var(--color-navy)]">
         <div className="mx-auto max-w-4xl px-6 py-20 text-center md:py-28">
           <h1 className="text-4xl font-bold tracking-tight text-[var(--color-white)] md:text-5xl">
-            Get started with a free pricing diagnostic.
+            {t("title")}
           </h1>
           <p className="mt-4 text-lg text-[var(--color-gray-light)]">
-            Tell us about your company and we&apos;ll schedule a complimentary 30-minute pricing review.
+            {t("subtitle")}
           </p>
         </div>
       </section>
@@ -60,10 +59,10 @@ export default function SignupPage() {
             <div className="rounded-xl border border-[var(--color-teal)]/30 bg-[var(--color-teal)]/5 p-12 text-center">
               <CheckCircle2 className="mx-auto h-12 w-12 text-[var(--color-teal)]" />
               <h2 className="mt-4 text-2xl font-bold text-[var(--color-navy)]">
-                You&apos;re in!
+                {t("successTitle")}
               </h2>
               <p className="mt-2 text-[var(--color-gray)]">
-                We&apos;ll reach out within one business day to schedule your free diagnostic call.
+                {t("successMessage")}
               </p>
             </div>
           ) : (
@@ -74,26 +73,26 @@ export default function SignupPage() {
               <div className="grid gap-6 sm:grid-cols-2">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-[var(--color-text)]">
-                    Full name
+                    {t("fullNameLabel")}
                   </label>
                   <input
                     type="text"
                     id="name"
                     required
                     className="mt-2 w-full rounded-lg border border-[var(--color-border)] px-4 py-3 text-base text-[var(--color-text)] placeholder:text-[var(--color-gray-light)] focus:border-[var(--color-blue)] focus:outline-none focus:ring-2 focus:ring-[var(--color-blue)]/20"
-                    placeholder="Your full name"
+                    placeholder={t("fullNamePlaceholder")}
                   />
                 </div>
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium text-[var(--color-text)]">
-                    Work email
+                    {t("workEmailLabel")}
                   </label>
                   <input
                     type="email"
                     id="email"
                     required
                     className="mt-2 w-full rounded-lg border border-[var(--color-border)] px-4 py-3 text-base text-[var(--color-text)] placeholder:text-[var(--color-gray-light)] focus:border-[var(--color-blue)] focus:outline-none focus:ring-2 focus:ring-[var(--color-blue)]/20"
-                    placeholder="you@company.com"
+                    placeholder={t("emailPlaceholder")}
                   />
                 </div>
               </div>
@@ -101,29 +100,29 @@ export default function SignupPage() {
               <div className="mt-6 grid gap-6 sm:grid-cols-2">
                 <div>
                   <label htmlFor="company" className="block text-sm font-medium text-[var(--color-text)]">
-                    Company name
+                    {t("companyNameLabel")}
                   </label>
                   <input
                     type="text"
                     id="company"
                     required
                     className="mt-2 w-full rounded-lg border border-[var(--color-border)] px-4 py-3 text-base text-[var(--color-text)] placeholder:text-[var(--color-gray-light)] focus:border-[var(--color-blue)] focus:outline-none focus:ring-2 focus:ring-[var(--color-blue)]/20"
-                    placeholder="Company name"
+                    placeholder={t("companyPlaceholder")}
                   />
                 </div>
                 <div>
                   <label htmlFor="arr" className="block text-sm font-medium text-[var(--color-text)]">
-                    Current ARR range
+                    {t("arrLabel")}
                   </label>
                   <select
                     id="arr"
                     required
                     className="mt-2 w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-white)] px-4 py-3 text-base text-[var(--color-text)] focus:border-[var(--color-blue)] focus:outline-none focus:ring-2 focus:ring-[var(--color-blue)]/20"
                   >
-                    <option value="">Select range</option>
+                    <option value="">{t("selectRangePlaceholder")}</option>
                     {ARR_RANGES.map((range) => (
-                      <option key={range} value={range}>
-                        {range}
+                      <option key={range.value} value={range.value}>
+                        {range.label}
                       </option>
                     ))}
                   </select>
@@ -132,14 +131,14 @@ export default function SignupPage() {
 
               <div className="mt-6">
                 <label htmlFor="challenge" className="block text-sm font-medium text-[var(--color-text)]">
-                  Biggest pricing challenge
+                  {t("challengeLabel")}
                 </label>
                 <textarea
                   id="challenge"
                   rows={4}
                   required
                   className="mt-2 w-full resize-none rounded-lg border border-[var(--color-border)] px-4 py-3 text-base text-[var(--color-text)] placeholder:text-[var(--color-gray-light)] focus:border-[var(--color-blue)] focus:outline-none focus:ring-2 focus:ring-[var(--color-blue)]/20"
-                  placeholder="e.g. We're not sure if our tiers are right, we think we're underpricing enterprise..."
+                  placeholder={t("challengePlaceholder")}
                 />
               </div>
 
@@ -147,7 +146,7 @@ export default function SignupPage() {
                 type="submit"
                 className="mt-8 w-full rounded-lg bg-[var(--color-blue)] px-8 py-3.5 text-base font-semibold text-[var(--color-white)] transition-colors hover:bg-[var(--color-blue-hover)]"
               >
-                Request Free Diagnostic
+                {t("submitButton")}
               </button>
             </form>
           )}
@@ -158,7 +157,7 @@ export default function SignupPage() {
       <section className="bg-[var(--color-white)]">
         <div className="mx-auto max-w-7xl px-6 py-20">
           <h2 className="text-center text-2xl font-bold tracking-tight text-[var(--color-navy)]">
-            What happens next?
+            {t("nextStepsHeading")}
           </h2>
           <div className="mt-12 grid gap-8 md:grid-cols-3">
             {NEXT_STEPS.map((step, i) => (

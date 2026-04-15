@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import { getLocale } from "next-intl/server";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -21,17 +20,17 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const locale = await getLocale();
+
   return (
-    <html lang="en" className={`${inter.variable} h-full`}>
+    <html lang={locale} className={`${inter.variable} h-full`}>
       <body className="min-h-full flex flex-col font-primary text-[var(--color-text)] bg-[var(--color-white)]">
-        <Header />
-        <main className="flex-1">{children}</main>
-        <Footer />
+        {children}
       </body>
     </html>
   );

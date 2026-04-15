@@ -1,5 +1,6 @@
-import Link from "next/link";
+import {Link} from "@/i18n/navigation";
 import { FOOTER_LINKS } from "@/lib/constants";
+import { getTranslations } from "next-intl/server";
 
 function LinkedinIcon({ className }: { className?: string }) {
   return (
@@ -17,7 +18,9 @@ function XIcon({ className }: { className?: string }) {
   );
 }
 
-export default function Footer() {
+export default async function Footer() {
+  const t = await getTranslations("Footer");
+
   return (
     <footer className="border-t border-[var(--color-border)] bg-[var(--color-navy)]">
       <div className="mx-auto max-w-7xl px-6 py-16">
@@ -28,19 +31,19 @@ export default function Footer() {
               <span className="text-[var(--color-white)]">Layer</span>
             </Link>
             <p className="mt-4 text-sm leading-relaxed text-[var(--color-gray-light)]">
-              Strategy-led pricing optimization for B2B SaaS companies ready to unlock trapped revenue.
+              {t("tagline")}
             </p>
             <div className="mt-6 flex gap-4">
               <a
                 href="#"
-                aria-label="LinkedIn"
+                aria-label={t("linkedinLabel")}
                 className="text-[var(--color-gray-light)] transition-colors hover:text-[var(--color-white)]"
               >
                 <LinkedinIcon className="h-5 w-5" />
               </a>
               <a
                 href="#"
-                aria-label="Twitter"
+                aria-label={t("twitterLabel")}
                 className="text-[var(--color-gray-light)] transition-colors hover:text-[var(--color-white)]"
               >
                 <XIcon className="h-5 w-5" />
@@ -50,7 +53,7 @@ export default function Footer() {
 
           <div>
             <h3 className="text-sm font-semibold uppercase tracking-wider text-[var(--color-white)]">
-              Company
+              {t("companyHeading")}
             </h3>
             <ul className="mt-4 flex flex-col gap-3">
               {FOOTER_LINKS.company.map((link) => (
@@ -59,7 +62,7 @@ export default function Footer() {
                     href={link.href}
                     className="text-sm text-[var(--color-gray-light)] transition-colors hover:text-[var(--color-white)]"
                   >
-                    {link.label}
+                    {t(link.label)}
                   </Link>
                 </li>
               ))}
@@ -68,7 +71,7 @@ export default function Footer() {
 
           <div>
             <h3 className="text-sm font-semibold uppercase tracking-wider text-[var(--color-white)]">
-              Services
+              {t("servicesHeading")}
             </h3>
             <ul className="mt-4 flex flex-col gap-3">
               {FOOTER_LINKS.services.map((link) => (
@@ -77,7 +80,7 @@ export default function Footer() {
                     href={link.href}
                     className="text-sm text-[var(--color-gray-light)] transition-colors hover:text-[var(--color-white)]"
                   >
-                    {link.label}
+                    {t(link.label)}
                   </Link>
                 </li>
               ))}
@@ -86,7 +89,7 @@ export default function Footer() {
 
           <div>
             <h3 className="text-sm font-semibold uppercase tracking-wider text-[var(--color-white)]">
-              Legal
+              {t("legalHeading")}
             </h3>
             <ul className="mt-4 flex flex-col gap-3">
               {FOOTER_LINKS.legal.map((link) => (
@@ -95,7 +98,7 @@ export default function Footer() {
                     href={link.href}
                     className="text-sm text-[var(--color-gray-light)] transition-colors hover:text-[var(--color-white)]"
                   >
-                    {link.label}
+                    {t(link.label)}
                   </Link>
                 </li>
               ))}
@@ -104,7 +107,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 border-t border-white/10 pt-8 text-center text-sm text-[var(--color-gray-light)]">
-          &copy; {new Date().getFullYear()} PriceLayer. All rights reserved.
+          {t("copyright", { year: new Date().getFullYear() })}
         </div>
       </div>
     </footer>
