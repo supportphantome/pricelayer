@@ -1,193 +1,200 @@
 {
-  "Navigation": {
-    "home": "Home",
-    "about": "About",
-    "blog": "Blog",
-    "contact": "Contact",
-    "getStarted": "Get Started",
-    "toggleMenu": "Toggle menu"
-  },
   "Footer": {
-    "tagline": "Strategy-led pricing optimization for B2B SaaS companies ready to unlock trapped revenue.",
+    "tagline": "Ottimizzazione dei prezzi basata sulla strategia per le aziende SaaS B2B pronte a sbloccare i ricavi nascosti.",
     "linkedinLabel": "LinkedIn",
     "twitterLabel": "Twitter",
-    "companyHeading": "Company",
-    "servicesHeading": "Services",
-    "legalHeading": "Legal",
-    "about": "About",
+    "companyHeading": "Azienda",
+    "servicesHeading": "Servizi",
+    "legalHeading": "Note legali",
+    "about": "Chi siamo",
     "blog": "Blog",
-    "contact": "Contact",
-    "pricingArchitecture": "Pricing Architecture",
-    "packagingStrategy": "Packaging Strategy",
-    "monetizationAudit": "Monetization Audit",
-    "privacyPolicy": "Privacy Policy",
-    "termsOfService": "Terms of Service",
-    "copyright": "© {year} PriceLayer. All rights reserved."
-  },
-  "Common": {
-    "ctaDescription": "Join hundreds of SaaS companies that have already transformed their pricing into a growth engine."
+    "contact": "Contatti",
+    "pricingArchitecture": "Architettura dei prezzi",
+    "packagingStrategy": "Strategia di packaging",
+    "monetizationAudit": "Audit di monetizzazione",
+    "privacyPolicy": "Informativa sulla privacy",
+    "termsOfService": "Termini di servizio",
+    "copyright": "© {year} PriceLayer. Tutti i diritti riservati."
   },
   "HomePage": {
-    "badge": "B2B SaaS Pricing Consultancy",
-    "title": "Your pricing is leaving money on the table.",
-    "subtitle": "PriceLayer helps B2B SaaS companies unlock revenue trapped in their pricing. We design tiers, packaging, and monetization strategies that grow revenue and reduce churn.",
-    "ctaPrimary": "Book a Strategy Call",
-    "ctaSecondary": "See Our Approach",
-    "stats": {
-      "companiesAdvised": "SaaS Companies Advised",
-      "revenueUplift": "Avg Revenue Uplift",
-      "optimizedArr": "Optimized ARR",
-      "migrationLed": "Pricing Migrations Led"
-    },
-    "servicesHeading": "Pricing strategy, not pricing software",
-    "servicesSubheading": "We work alongside your team to design pricing that drives growth. No platform lock-in, no ongoing software fees.",
     "services": {
-      "pricingArchitecture": {
-        "title": "Pricing Architecture",
-        "description": "Design optimal tiers, feature gating, and price points backed by willingness-to-pay research and competitive analysis."
-      },
       "packagingStrategy": {
-        "title": "Packaging Strategy",
-        "description": "Bundle features into packages that drive expansion revenue, reduce decision friction, and align with how customers actually buy."
+        "title": "Strategia di packaging",
+        "description": "Raggruppa le funzionalità in pacchetti che guidano i ricavi di espansione, riducono l'attrito decisionale e si allineano con il modo in cui i clienti effettivamente acquistano."
+      },
+      "pricingArchitecture": {
+        "title": "Architettura dei prezzi",
+        "description": "Progetta tier ottimali, feature gating e punti di prezzo supportati da ricerche sulla disponibilità a pagare e analisi competitive."
       },
       "monetizationAudit": {
-        "title": "Monetization Audit",
-        "description": "Identify revenue leaks in your current model. We analyze your pricing, usage data, and churn patterns to find quick wins."
+        "title": "Audit di monetizzazione",
+        "description": "Identifica le perdite di ricavi nel tuo modello attuale. Analizziamo i tuoi prezzi, i dati di utilizzo e i modelli di churn per trovare vittorie rapide."
       }
     },
-    "howItWorksHeading": "How it works",
-    "howItWorksSubheading": "A proven three-phase process that minimizes risk and maximizes impact.",
+    "positioningDescription": "Paddle, Stripe e Chargebee gestiscono l'infrastruttura di fatturazione. Ma l'infrastruttura giusta con i prezzi sbagliati lascia comunque ricavi sul tavolo. PriceLayer è il livello strategico che si trova sopra il tuo stack di fatturazione, assicurando che ogni tier, feature gate e punto di prezzo sia ottimizzato per la crescita.",
+    "badge": "Consulenza sui prezzi B2B SaaS",
+    "title": "I tuoi prezzi stanno lasciando soldi sul tavolo.",
+    "subtitle": "PriceLayer aiuta le aziende SaaS B2B a sbloccare i ricavi nascosti nei loro prezzi. Progettiamo tier, packaging e strategie di monetizzazione che aumentano i ricavi e riducono il churn.",
+    "ctaPrimary": "Prenota una chiamata strategica",
+    "ctaSecondary": "Scopri il nostro approccio",
+    "stats": {
+      "companiesAdvised": "Aziende SaaS consigliate",
+      "revenueUplift": "Aumento medio dei ricavi",
+      "optimizedArr": "ARR ottimizzato",
+      "migrationLed": "Migrazioni di prezzi gestite"
+    },
+    "servicesHeading": "Strategia di pricing, non software di pricing",
+    "servicesSubheading": "Lavoriamo insieme al tuo team per progettare prezzi che guidano la crescita. Nessun blocco della piattaforma, nessuna commissione software continua.",
+    "howItWorksHeading": "Come funziona",
+    "howItWorksSubheading": "Un processo collaudato in tre fasi che minimizza il rischio e massimizza l'impatto.",
     "steps": {
       "diagnostic": {
-        "title": "Diagnostic",
-        "description": "We audit your current pricing, interview customers, and benchmark against your competitive landscape."
+        "title": "Diagnostica",
+        "description": "Esaminiamo i tuoi prezzi attuali, intervisteremo i clienti e faremo un benchmark rispetto al tuo panorama competitivo."
       },
       "design": {
-        "title": "Design",
-        "description": "We model and test new pricing structures, run simulations, and design packaging that maps to your value metrics."
+        "title": "Progettazione",
+        "description": "Modelliamo e testiamo nuove strutture di prezzo, eseguiamo simulazioni e progettiamo packaging che si mappano sui tuoi metriche di valore."
       },
       "deploy": {
-        "title": "Deploy",
-        "description": "We help you roll out pricing changes with migration plans, change communication, and churn mitigation strategies."
+        "title": "Implementazione",
+        "description": "Ti aiutiamo a implementare i cambiamenti di prezzo con piani di migrazione, comunicazione dei cambiamenti e strategie di mitigazione del churn."
       }
     },
-    "positioningHeading": "You don't need another billing tool.\nYou need a pricing strategy.",
-    "positioningDescription": "Paddle, Stripe, and Chargebee handle billing infrastructure. But the right infrastructure with the wrong pricing still leaves revenue on the table. PriceLayer is the strategy layer that sits above your billing stack — ensuring every tier, feature gate, and price point is optimized for growth.",
-    "testimonialsHeading": "Trusted by SaaS leaders",
+    "positioningHeading": "Non hai bisogno di un altro strumento di fatturazione.\nHai bisogno di una strategia di pricing.",
+    "testimonialsHeading": "Fidato dai leader SaaS",
     "testimonials": {
       "sarahChen": {
-        "quote": "PriceLayer helped us restructure our pricing from a flat rate to usage-based tiers. Our expansion revenue increased 34% in the first quarter.",
+        "quote": "PriceLayer ci ha aiutato a ristrutturare i nostri prezzi da una tariffa fissa a tier basati sull'utilizzo. I nostri ricavi di espansione sono aumentati del 34% nel primo trimestre.",
         "name": "Sarah Chen",
         "title": "VP of Revenue, DataSync"
       },
       "marcusRivera": {
-        "quote": "We were underpricing our enterprise tier by 40%. PriceLayer's audit paid for itself in the first month.",
+        "quote": "Stavamo sottovalutando il nostro tier enterprise del 40%. L'audit di PriceLayer si è ripagato nel primo mese.",
         "name": "Marcus Rivera",
         "title": "CEO, CloudQueue"
       },
       "amiraOkafor": {
-        "quote": "The packaging redesign reduced our sales cycle by two weeks. Prospects could self-select the right tier without a demo.",
+        "quote": "La riprogettazione del packaging ha ridotto il nostro ciclo di vendita di due settimane. I prospect potevano auto-selezionare il tier giusto senza una demo.",
         "name": "Amira Okafor",
         "title": "Head of Growth, FormStack Pro"
       }
     },
-    "ctaHeadline": "Ready to stop guessing on pricing?",
-    "ctaButton": "Book a Free Strategy Call"
+    "ctaHeadline": "Pronto a smettere di indovinare sui prezzi?",
+    "ctaButton": "Prenota una chiamata strategica gratuita"
   },
   "AboutPage": {
-    "title": "About PriceLayer",
-    "mission": "We believe pricing is the most underleveraged growth lever in SaaS. Most companies spend months on product and minutes on pricing. We exist to change that.",
-    "approachHeading": "Our Approach",
-    "approachP1": "PriceLayer combines rigorous quantitative research with deep SaaS domain expertise. Every engagement starts with understanding your customers, your competitive landscape, and your growth objectives.",
-    "approachP2": "We use a combination of <strong>competitive benchmarking</strong>, <strong>willingness-to-pay research</strong>, and <strong>value metric analysis</strong> to design pricing that aligns what you charge with the value your customers actually receive.",
-    "approachP3": "The result: higher conversion rates, better expansion revenue, lower churn, and a pricing model that scales with your business.",
-    "teamHeading": "Meet the Team",
+    "mission": "Crediamo che il pricing sia la leva di crescita più sottoutilizzata in SaaS. La maggior parte delle aziende spende mesi sul prodotto e minuti sui prezzi. Esistiamo per cambiare questo.",
+    "values": {
+      "longTermPartnership": {
+        "description": "Il pricing non è un progetto una tantum. Costruiamo relazioni durature e ritorniamo per revisioni dei prezzi mentre il tuo prodotto e il mercato evolvono.",
+        "title": "Partnership a lungo termine"
+      },
+      "evidenceOverIntuition": {
+        "title": "Evidenza rispetto all'intuizione",
+        "description": "Ogni raccomandazione è supportata da dati: ricerca sulla disponibilità a pagare, benchmark competitivi e analisi di utilizzo. Non indoviniamo."
+      },
+      "revenueWithoutResentment": {
+        "title": "Ricavi senza risentimento",
+        "description": "Un buon pricing aumenta i ricavi e fa sentire ai clienti che stanno ottenendo un affare equo. Ottimizziamo per la fiducia a lungo termine, non per l'estrazione a breve termine."
+      }
+    },
+    "title": "Chi siamo - PriceLayer",
+    "approachHeading": "Il nostro approccio",
+    "approachP1": "PriceLayer combina ricerche quantitative rigorose con una profonda esperienza nel dominio SaaS. Ogni engagement inizia con la comprensione dei tuoi clienti, del tuo panorama competitivo e dei tuoi obiettivi di crescita.",
+    "approachP2": "Utilizziamo una combinazione di <strong>benchmark competitivi</strong>, <strong>ricerca sulla disponibilità a pagare</strong> e <strong>analisi delle metriche di valore</strong> per progettare prezzi che allineano quello che addebiti con il valore che i tuoi clienti effettivamente ricevono.",
+    "approachP3": "Il risultato: tassi di conversione più elevati, migliori ricavi di espansione, churn inferiore e un modello di prezzo che scala con la tua azienda.",
+    "teamHeading": "Conosci il team",
     "team": {
       "elenaVoss": {
         "name": "Elena Voss",
-        "title": "Founder & Lead Strategist",
-        "bio": "Former VP of Pricing at a $500M ARR SaaS company. 12 years of experience in B2B pricing strategy and monetization."
+        "title": "Fondatrice e strategista principale",
+        "bio": "Ex VP of Pricing presso un'azienda SaaS con ARR di $500M. 12 anni di esperienza nella strategia di pricing B2B e monetizzazione."
       },
       "jamesOkonkwo": {
         "name": "James Okonkwo",
         "title": "Senior Pricing Analyst",
-        "bio": "Data scientist turned pricing specialist. Built pricing models for 80+ SaaS companies across fintech, DevTools, and MarTech."
+        "bio": "Data scientist diventato specialista di pricing. Ha costruito modelli di prezzo per 80+ aziende SaaS in fintech, DevTools e MarTech."
       },
       "priyaSharma": {
         "name": "Priya Sharma",
         "title": "Packaging & GTM Lead",
-        "bio": "10 years in product marketing and go-to-market strategy. Expert in tier design, feature gating, and launch communication."
+        "bio": "10 anni in product marketing e strategia go-to-market. Esperta in tier design, feature gating e comunicazione di lancio."
       },
       "danielKim": {
         "name": "Daniel Kim",
         "title": "Research Director",
-        "bio": "PhD in behavioral economics. Leads willingness-to-pay research and conjoint analysis for every client engagement."
+        "bio": "PhD in economia comportamentale. Guida la ricerca sulla disponibilità a pagare e l'analisi congiunta per ogni engagement con i clienti."
       }
     },
-    "valuesHeading": "Our Values",
-    "values": {
-      "evidenceOverIntuition": {
-        "title": "Evidence Over Intuition",
-        "description": "Every recommendation is backed by data — willingness-to-pay research, competitive benchmarking, and usage analytics. We don't guess."
-      },
-      "revenueWithoutResentment": {
-        "title": "Revenue Without Resentment",
-        "description": "Good pricing grows revenue and makes customers feel they're getting a fair deal. We optimize for long-term trust, not short-term extraction."
-      },
-      "longTermPartnership": {
-        "title": "Long-Term Partnership",
-        "description": "Pricing isn't a one-time project. We build ongoing relationships and return for pricing reviews as your product and market evolve."
-      }
-    },
-    "ctaHeadline": "Want to work with us?",
-    "ctaButton": "Get in Touch"
+    "valuesHeading": "I nostri valori",
+    "ctaHeadline": "Vuoi lavorare con noi?",
+    "ctaButton": "Mettiti in contatto"
+  },
+  "Navigation": {
+    "home": "Home",
+    "about": "Chi siamo",
+    "blog": "Blog",
+    "contact": "Contatti",
+    "getStarted": "Inizia",
+    "toggleMenu": "Attiva/disattiva menu"
+  },
+  "Common": {
+    "ctaDescription": "Unisciti a centinaia di aziende SaaS che hanno già trasformato i loro prezzi in un motore di crescita."
+  },
+  "BlogPage": {
+    "readMore": "Leggi di più",
+    "metaTitle": "Blog — PriceLayer",
+    "metaDescription": "Approfondimenti sulla strategia di pricing SaaS B2B, packaging e monetizzazione dal team di PriceLayer.",
+    "title": "Approfondimenti sul pricing",
+    "subtitle": "Riflessioni pratiche sulla strategia di pricing, packaging e monetizzazione SaaS."
   },
   "ContactPage": {
-    "title": "Let's talk pricing.",
-    "subtitle": "Tell us about your company and we'll get back to you within one business day.",
-    "successTitle": "Message received!",
-    "successMessage": "We'll get back to you within one business day.",
-    "nameLabel": "Name",
+    "title": "Parliamo di pricing.",
+    "subtitle": "Raccontaci della tua azienda e ti risponderemo entro un giorno lavorativo.",
+    "successTitle": "Messaggio ricevuto!",
+    "successMessage": "Ti risponderemo entro un giorno lavorativo.",
+    "nameLabel": "Nome",
     "emailLabel": "Email",
-    "companyLabel": "Company",
-    "companySizeLabel": "Company size",
-    "messageLabel": "Message",
-    "namePlaceholder": "Your name",
-    "emailPlaceholder": "you@company.com",
-    "companyPlaceholder": "Company name",
-    "selectSizePlaceholder": "Select size",
-    "messagePlaceholder": "Tell us about your pricing challenge...",
-    "submitButton": "Send Message",
-    "emailUsTitle": "Email us",
-    "responseTimeTitle": "Response time",
-    "responseTimeDescription": "We respond within one business day, usually faster.",
-    "expectTitle": "What to expect",
-    "expectDescription": "A 30-minute intro call to understand your current pricing model, challenges, and growth goals. No pitch, just a conversation.",
+    "companyLabel": "Azienda",
+    "companySizeLabel": "Dimensione dell'azienda",
+    "messageLabel": "Messaggio",
+    "namePlaceholder": "Il tuo nome",
+    "emailPlaceholder": "tu@azienda.com",
+    "companyPlaceholder": "Nome dell'azienda",
+    "selectSizePlaceholder": "Seleziona dimensione",
+    "messagePlaceholder": "Raccontaci della tua sfida di pricing...",
+    "submitButton": "Invia messaggio",
+    "emailUsTitle": "Scrivici",
+    "responseTimeTitle": "Tempo di risposta",
+    "responseTimeDescription": "Rispondiamo entro un giorno lavorativo, di solito più velocemente.",
+    "expectTitle": "Cosa aspettarsi",
+    "expectDescription": "Una chiamata introduttiva di 30 minuti per comprendere il tuo modello di prezzo attuale, le sfide e gli obiettivi di crescita. Nessun pitch, solo una conversazione.",
     "sizes": {
-      "1to10": "1-10 employees",
-      "11to50": "11-50 employees",
-      "51to200": "51-200 employees",
-      "201to1000": "201-1000 employees",
-      "1000plus": "1000+ employees"
+      "1to10": "1-10 dipendenti",
+      "11to50": "11-50 dipendenti",
+      "51to200": "51-200 dipendenti",
+      "201to1000": "201-1000 dipendenti",
+      "1000plus": "1000+ dipendenti"
     }
   },
   "SignupPage": {
-    "title": "Get started with a free pricing diagnostic.",
-    "subtitle": "Tell us about your company and we'll schedule a complimentary 30-minute pricing review.",
-    "successTitle": "You're in!",
-    "successMessage": "We'll reach out within one business day to schedule your free diagnostic call.",
-    "fullNameLabel": "Full name",
-    "workEmailLabel": "Work email",
-    "companyNameLabel": "Company name",
-    "arrLabel": "Current ARR range",
-    "challengeLabel": "Biggest pricing challenge",
-    "fullNamePlaceholder": "Your full name",
-    "emailPlaceholder": "you@company.com",
-    "companyPlaceholder": "Company name",
-    "selectRangePlaceholder": "Select range",
-    "challengePlaceholder": "e.g. We're not sure if our tiers are right, we think we're underpricing enterprise...",
-    "submitButton": "Request Free Diagnostic",
-    "nextStepsHeading": "What happens next?",
+    "title": "Inizia con una diagnostica di pricing gratuita.",
+    "subtitle": "Raccontaci della tua azienda e programmeremo una revisione di pricing complementare di 30 minuti.",
+    "successTitle": "Sei dentro!",
+    "successMessage": "Ti contatteremo entro un giorno lavorativo per programmare la tua chiamata diagnostica gratuita.",
+    "fullNameLabel": "Nome completo",
+    "workEmailLabel": "Email di lavoro",
+    "companyNameLabel": "Nome dell'azienda",
+    "arrLabel": "Intervallo ARR attuale",
+    "challengeLabel": "Maggiore sfida di pricing",
+    "fullNamePlaceholder": "Il tuo nome completo",
+    "emailPlaceholder": "tu@azienda.com",
+    "companyPlaceholder": "Nome dell'azienda",
+    "selectRangePlaceholder": "Seleziona intervallo",
+    "challengePlaceholder": "Es. Non siamo sicuri se i nostri tier sono giusti, pensiamo di sottovalutare l'enterprise...",
+    "submitButton": "Richiedi diagnostica gratuita",
+    "nextStepsHeading": "Cosa succede dopo?",
     "arr": {
       "preRevenue": "Pre-revenue",
       "0to1m": "$0 - $1M ARR",
@@ -198,29 +205,22 @@
     },
     "nextSteps": {
       "diagnostic": {
-        "title": "Free Diagnostic Call",
-        "description": "We review your current pricing model, identify quick wins, and assess the opportunity."
+        "title": "Chiamata diagnostica gratuita",
+        "description": "Esaminiamo il tuo modello di prezzo attuale, identifichiamo vittorie rapide e valutiamo l'opportunità."
       },
       "proposal": {
-        "title": "Custom Proposal",
-        "description": "Based on the diagnostic, we build a tailored engagement plan with clear deliverables and timeline."
+        "title": "Proposta personalizzata",
+        "description": "Sulla base della diagnostica, costruiamo un piano di engagement personalizzato con deliverable e timeline chiari."
       },
       "transformation": {
-        "title": "Pricing Transformation",
-        "description": "We execute the strategy together — from research through design to rollout support."
+        "title": "Trasformazione del pricing",
+        "description": "Eseguiamo la strategia insieme: dalla ricerca alla progettazione al supporto di implementazione."
       }
     }
   },
-  "BlogPage": {
-    "metaTitle": "Blog — PriceLayer",
-    "metaDescription": "Insights on B2B SaaS pricing strategy, packaging, and monetization from the PriceLayer team.",
-    "title": "Pricing Insights",
-    "subtitle": "Practical thinking on SaaS pricing, packaging, and monetization strategy.",
-    "readMore": "Read more"
-  },
   "BlogPost": {
-    "backToBlog": "Back to Blog",
-    "ctaHeadline": "Want pricing advice tailored to your business?",
-    "ctaButton": "Book a Free Diagnostic"
+    "backToBlog": "Torna al Blog",
+    "ctaHeadline": "Vuoi consigli di pricing personalizzati per la tua azienda?",
+    "ctaButton": "Prenota una diagnostica gratuita"
   }
 }
