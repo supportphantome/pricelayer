@@ -1,6 +1,23 @@
 {
+  "Footer": {
+    "linkedin": "LinkedIn",
+    "description": "Optimisation tarifaire stratégique pour les entreprises SaaS B2B prêtes à débloquer les revenus captifs.",
+    "companyTitle": "Entreprise",
+    "servicesTitle": "Services",
+    "legalTitle": "Mentions légales",
+    "about": "À propos",
+    "blog": "Blog",
+    "contact": "Contact",
+    "pricingArchitecture": "Architecture tarifaire",
+    "packagingStrategy": "Stratégie d'emballage",
+    "monetizationAudit": "Audit de monétisation",
+    "privacyPolicy": "Politique de confidentialité",
+    "termsOfService": "Conditions d'utilisation",
+    "twitter": "Twitter",
+    "copyright": "© {year} PriceLayer. Tous droits réservés."
+  },
   "HomePage": {
-    "servicesTitle": "Stratégie tarifaire, pas logiciel de tarification",
+    "testimonial1Name": "Sarah Chen",
     "badge": "Cabinet de conseil en tarification B2B SaaS",
     "title": "Votre tarification laisse de l'argent sur la table.",
     "subtitle": "PriceLayer aide les entreprises SaaS B2B à débloquer les revenus captifs dans leur tarification. Nous concevons des niveaux, des offres et des stratégies de monétisation qui augmentent les revenus et réduisent le taux de désabonnement.",
@@ -14,6 +31,7 @@
     "statOptimizedArr": "ARR optimisé",
     "statMigrationsValue": "50+",
     "statMigrations": "Migrations tarifaires menées",
+    "servicesTitle": "Stratégie tarifaire, pas logiciel de tarification",
     "servicesSubtitle": "Nous travaillons aux côtés de votre équipe pour concevoir une tarification qui stimule la croissance. Pas de verrouillage de plateforme, pas de frais logiciels continus.",
     "servicePricingArchitectureTitle": "Architecture tarifaire",
     "servicePricingArchitectureDescription": "Concevez des niveaux optimaux, des restrictions de fonctionnalités et des points de prix soutenus par des recherches sur la volonté de payer et une analyse concurrentielle.",
@@ -30,9 +48,9 @@
     "stepDeployTitle": "Déploiement",
     "stepDeployDescription": "Nous vous aidons à déployer les changements tarifaires avec des plans de migration, une communication de changement et des stratégies d'atténuation du désabonnement.",
     "positioningTitle": "Vous n'avez pas besoin d'un autre outil de facturation.<br />Vous avez besoin d'une stratégie tarifaire.",
+    "positioningDescription": "Paddle, Stripe et Chargebee gèrent l'infrastructure de facturation. Mais la bonne infrastructure avec la mauvaise tarification laisse toujours des revenus sur la table. PriceLayer est la couche stratégique qui se situe au-dessus de votre pile de facturation — en veillant à ce que chaque niveau, restriction de fonctionnalité et point de prix soit optimisé pour la croissance.",
     "testimonialsTitle": "Approuvé par les leaders SaaS",
     "testimonial1Quote": "PriceLayer nous a aidés à restructurer notre tarification d'un tarif forfaitaire à des niveaux basés sur l'utilisation. Nos revenus d'expansion ont augmenté de 34% au premier trimestre.",
-    "testimonial1Name": "Sarah Chen",
     "testimonial1Title": "VP des revenus, DataSync",
     "testimonial2Quote": "Nous sous-évaluions notre niveau entreprise de 40%. L'audit de PriceLayer s'est amorti en un mois.",
     "testimonial2Name": "Marcus Rivera",
@@ -41,14 +59,7 @@
     "testimonial3Name": "Amira Okafor",
     "testimonial3Title": "Responsable de la croissance, FormStack Pro",
     "ctaHeadline": "Prêt à arrêter de deviner sur la tarification?",
-    "ctaButton": "Réserver un appel stratégique gratuit",
-    "positioningDescription": "Paddle, Stripe et Chargebee gèrent l'infrastructure de facturation. Mais la bonne infrastructure avec la mauvaise tarification laisse toujours des revenus sur la table. PriceLayer est la couche stratégique qui se situe au-dessus de votre pile de facturation — en veillant à ce que chaque niveau, restriction de fonctionnalité et point de prix soit optimisé pour la croissance."
-  },
-  "BlogPost": {
-    "metaTitle": "{title} — Blog PriceLayer",
-    "backLink": "Retour au blog",
-    "ctaHeadline": "Vous voulez des conseils tarifaires adaptés à votre entreprise?",
-    "ctaButton": "Réserver un diagnostic gratuit"
+    "ctaButton": "Réserver un appel stratégique gratuit"
   },
   "Navigation": {
     "home": "Accueil",
@@ -58,25 +69,12 @@
     "getStarted": "Commencer",
     "toggleMenu": "Ouvrir le menu"
   },
-  "Footer": {
-    "companyTitle": "Entreprise",
-    "servicesTitle": "Services",
-    "legalTitle": "Mentions légales",
-    "about": "À propos",
-    "blog": "Blog",
-    "contact": "Contact",
-    "pricingArchitecture": "Architecture tarifaire",
-    "packagingStrategy": "Stratégie d'emballage",
-    "monetizationAudit": "Audit de monétisation",
-    "privacyPolicy": "Politique de confidentialité",
-    "termsOfService": "Conditions d'utilisation",
-    "linkedin": "LinkedIn",
-    "twitter": "Twitter",
-    "copyright": "© {year} PriceLayer. Tous droits réservés.",
-    "description": "Optimisation tarifaire stratégique pour les entreprises SaaS B2B prêtes à débloquer les revenus captifs."
+  "CTABanner": {
+    "subtitle": "Rejoignez des centaines d'entreprises SaaS qui ont déjà transformé leur tarification en moteur de croissance."
   },
   "AboutPage": {
     "title": "À propos de PriceLayer",
+    "subtitle": "Nous croyons que la tarification est le levier de croissance le plus sous-exploité dans SaaS. La plupart des entreprises consacrent des mois au produit et des minutes à la tarification. Nous existons pour changer cela.",
     "approachTitle": "Notre approche",
     "approachParagraph1": "PriceLayer combine la recherche quantitative rigoureuse avec une expertise approfondie du domaine SaaS. Chaque engagement commence par comprendre vos clients, votre paysage concurrentiel et vos objectifs de croissance.",
     "approachParagraph2": "Nous utilisons une combinaison d'<strong>analyse comparative concurrentielle</strong>, de <strong>recherche sur la volonté de payer</strong> et d'<strong>analyse des métriques de valeur</strong> pour concevoir une tarification qui aligne ce que vous facturez avec la valeur que vos clients reçoivent réellement.",
@@ -100,10 +98,9 @@
     "value2Title": "Revenus sans ressentiment",
     "value2Description": "Une bonne tarification augmente les revenus et fait sentir aux clients qu'ils obtiennent une bonne affaire. Nous optimisons pour la confiance à long terme, pas l'extraction à court terme.",
     "value3Title": "Partenariat à long terme",
+    "value3Description": "La tarification n'est pas un projet ponctuel. Nous construisons des relations durables et revenons pour des examens tarifaires à mesure que votre produit et votre marché évoluent.",
     "ctaHeadline": "Vous voulez travailler avec nous?",
-    "ctaButton": "Nous contacter",
-    "subtitle": "Nous croyons que la tarification est le levier de croissance le plus sous-exploité dans SaaS. La plupart des entreprises consacrent des mois au produit et des minutes à la tarification. Nous existons pour changer cela.",
-    "value3Description": "La tarification n'est pas un projet ponctuel. Nous construisons des relations durables et revenons pour des examens tarifaires à mesure que votre produit et votre marché évoluent."
+    "ctaButton": "Nous contacter"
   },
   "ContactPage": {
     "title": "Parlons tarification.",
@@ -169,7 +166,10 @@
     "subtitle": "Réflexions pratiques sur la stratégie tarifaire, d'emballage et de monétisation SaaS.",
     "readMore": "Lire la suite"
   },
-  "CTABanner": {
-    "subtitle": "Rejoignez des centaines d'entreprises SaaS qui ont déjà transformé leur tarification en moteur de croissance."
+  "BlogPost": {
+    "metaTitle": "{title} — Blog PriceLayer",
+    "backLink": "Retour au blog",
+    "ctaHeadline": "Vous voulez des conseils tarifaires adaptés à votre entreprise?",
+    "ctaButton": "Réserver un diagnostic gratuit"
   }
 }
