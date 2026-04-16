@@ -1,13 +1,18 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import { getLocale } from "next-intl/server";
 
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
 });
+
+const RTL_LOCALES = new Set(["ar", "he", "fa", "ur", "ps", "sd", "yi"]);
+
+function getDirection(locale: string): "ltr" | "rtl" {
+  return RTL_LOCALES.has(locale.split("-")[0]) ? "rtl" : "ltr";
+}
 
 export const metadata: Metadata = {
   title: "PriceLayer — B2B SaaS Pricing Consultancy",
@@ -21,17 +26,17 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const locale = await getLocale();
+
   return (
-    <html lang="en" className={`${inter.variable} h-full`}>
+    <html lang={locale} dir={getDirection(locale)} className={`${inter.variable} h-full`}>
       <body className="min-h-full flex flex-col font-primary text-[var(--color-text)] bg-[var(--color-white)]">
-        <Header />
-        <main className="flex-1">{children}</main>
-        <Footer />
+        {children}
       </body>
     </html>
   );

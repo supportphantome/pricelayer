@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { ArrowLeft } from "lucide-react";
+import { getTranslations } from "next-intl/server";
 import { posts } from "../posts";
 import CTABanner from "@/components/CTABanner";
 
@@ -16,8 +17,9 @@ export async function generateMetadata({ params }: PageProps) {
   const { slug } = await params;
   const post = posts.find((p) => p.slug === slug);
   if (!post) return {};
+  const t = await getTranslations('BlogPost');
   return {
-    title: `${post.title} — PriceLayer Blog`,
+    title: t('metaTitle', { title: post.title }),
     description: post.excerpt,
   };
 }
@@ -30,6 +32,8 @@ export default async function BlogPostPage({ params }: PageProps) {
     notFound();
   }
 
+  const t = await getTranslations('BlogPost');
+
   return (
     <>
       <section className="bg-[var(--color-white)]">
@@ -39,7 +43,7 @@ export default async function BlogPostPage({ params }: PageProps) {
             className="inline-flex items-center gap-2 text-sm font-medium text-[var(--color-blue)] hover:underline"
           >
             <ArrowLeft className="h-4 w-4" />
-            Back to Blog
+            {t('backLink')}
           </Link>
           <time className="mt-8 block text-sm text-[var(--color-gray)]">{post.date}</time>
           <h1 className="mt-3 text-3xl font-bold tracking-tight text-[var(--color-navy)] md:text-4xl">
@@ -53,8 +57,8 @@ export default async function BlogPostPage({ params }: PageProps) {
       </section>
 
       <CTABanner
-        headline="Want pricing advice tailored to your business?"
-        buttonText="Book a Free Diagnostic"
+        headline={t('ctaHeadline')}
+        buttonText={t('ctaButton')}
         buttonHref="/signup"
       />
     </>

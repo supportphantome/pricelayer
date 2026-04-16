@@ -1,63 +1,61 @@
 import { Target, Heart, Handshake } from "lucide-react";
+import { getTranslations } from "next-intl/server";
 import CTABanner from "@/components/CTABanner";
 
 const TEAM = [
   {
-    name: "Elena Voss",
-    title: "Founder & Lead Strategist",
-    bio: "Former VP of Pricing at a $500M ARR SaaS company. 12 years of experience in B2B pricing strategy and monetization.",
+    nameKey: "team1Name",
+    titleKey: "team1Title",
+    bioKey: "team1Bio",
   },
   {
-    name: "James Okonkwo",
-    title: "Senior Pricing Analyst",
-    bio: "Data scientist turned pricing specialist. Built pricing models for 80+ SaaS companies across fintech, DevTools, and MarTech.",
+    nameKey: "team2Name",
+    titleKey: "team2Title",
+    bioKey: "team2Bio",
   },
   {
-    name: "Priya Sharma",
-    title: "Packaging & GTM Lead",
-    bio: "10 years in product marketing and go-to-market strategy. Expert in tier design, feature gating, and launch communication.",
+    nameKey: "team3Name",
+    titleKey: "team3Title",
+    bioKey: "team3Bio",
   },
   {
-    name: "Daniel Kim",
-    title: "Research Director",
-    bio: "PhD in behavioral economics. Leads willingness-to-pay research and conjoint analysis for every client engagement.",
+    nameKey: "team4Name",
+    titleKey: "team4Title",
+    bioKey: "team4Bio",
   },
 ];
 
 const VALUES = [
   {
     icon: Target,
-    title: "Evidence Over Intuition",
-    description:
-      "Every recommendation is backed by data — willingness-to-pay research, competitive benchmarking, and usage analytics. We don't guess.",
+    titleKey: "value1Title",
+    descriptionKey: "value1Description",
   },
   {
     icon: Heart,
-    title: "Revenue Without Resentment",
-    description:
-      "Good pricing grows revenue and makes customers feel they're getting a fair deal. We optimize for long-term trust, not short-term extraction.",
+    titleKey: "value2Title",
+    descriptionKey: "value2Description",
   },
   {
     icon: Handshake,
-    title: "Long-Term Partnership",
-    description:
-      "Pricing isn't a one-time project. We build ongoing relationships and return for pricing reviews as your product and market evolve.",
+    titleKey: "value3Title",
+    descriptionKey: "value3Description",
   },
 ];
 
-export default function AboutPage() {
+export default async function AboutPage() {
+  const t = await getTranslations("AboutPage");
+
   return (
     <>
       {/* Mission */}
       <section className="bg-[var(--color-navy)]">
         <div className="mx-auto max-w-4xl px-6 py-20 text-center md:py-28">
           <h1 className="text-4xl font-bold tracking-tight text-[var(--color-white)] md:text-5xl">
-            About PriceLayer
+            {t("title")}
           </h1>
           <p className="mt-6 text-xl leading-relaxed text-[var(--color-gray-light)]">
-            We believe pricing is the most underleveraged growth lever in SaaS.
-            Most companies spend months on product and minutes on pricing.
-            We exist to change that.
+            {t("subtitle")}
           </p>
         </div>
       </section>
@@ -67,23 +65,19 @@ export default function AboutPage() {
         <div className="mx-auto max-w-7xl px-6 py-20 md:py-28">
           <div className="mx-auto max-w-3xl">
             <h2 className="text-3xl font-bold tracking-tight text-[var(--color-navy)]">
-              Our Approach
+              {t("approachTitle")}
             </h2>
             <div className="mt-8 space-y-6 text-lg leading-relaxed text-[var(--color-text-muted)]">
               <p>
-                PriceLayer combines rigorous quantitative research with deep SaaS domain expertise.
-                Every engagement starts with understanding your customers, your competitive landscape,
-                and your growth objectives.
+                {t("approachParagraph1")}
               </p>
               <p>
-                We use a combination of <strong className="text-[var(--color-text)]">competitive benchmarking</strong>,{" "}
-                <strong className="text-[var(--color-text)]">willingness-to-pay research</strong>,{" "}
-                and <strong className="text-[var(--color-text)]">value metric analysis</strong> to design pricing
-                that aligns what you charge with the value your customers actually receive.
+                {t.rich("approachParagraph2", {
+                  strong: (chunks) => <strong className="text-[var(--color-text)]">{chunks}</strong>,
+                })}
               </p>
               <p>
-                The result: higher conversion rates, better expansion revenue,
-                lower churn, and a pricing model that scales with your business.
+                {t("approachParagraph3")}
               </p>
             </div>
           </div>
@@ -94,23 +88,23 @@ export default function AboutPage() {
       <section className="bg-[var(--color-light)]">
         <div className="mx-auto max-w-7xl px-6 py-20 md:py-28">
           <h2 className="text-center text-3xl font-bold tracking-tight text-[var(--color-navy)]">
-            Meet the Team
+            {t("teamTitle")}
           </h2>
           <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {TEAM.map((member) => (
               <div
-                key={member.name}
+                key={member.nameKey}
                 className="rounded-xl border border-[var(--color-border)] bg-[var(--color-white)] p-6"
               >
                 <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[var(--color-blue)]/10 text-xl font-bold text-[var(--color-blue)]">
-                  {member.name.charAt(0)}
+                  {t(member.nameKey).charAt(0)}
                 </div>
                 <h3 className="mt-4 text-lg font-semibold text-[var(--color-navy)]">
-                  {member.name}
+                  {t(member.nameKey)}
                 </h3>
-                <p className="text-sm font-medium text-[var(--color-blue)]">{member.title}</p>
+                <p className="text-sm font-medium text-[var(--color-blue)]">{t(member.titleKey)}</p>
                 <p className="mt-3 text-sm leading-relaxed text-[var(--color-gray)]">
-                  {member.bio}
+                  {t(member.bioKey)}
                 </p>
               </div>
             ))}
@@ -122,19 +116,19 @@ export default function AboutPage() {
       <section className="bg-[var(--color-white)]">
         <div className="mx-auto max-w-7xl px-6 py-20 md:py-28">
           <h2 className="text-center text-3xl font-bold tracking-tight text-[var(--color-navy)]">
-            Our Values
+            {t("valuesTitle")}
           </h2>
           <div className="mt-16 grid gap-8 md:grid-cols-3">
             {VALUES.map((value) => (
-              <div key={value.title} className="text-center">
+              <div key={value.titleKey} className="text-center">
                 <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-xl bg-[var(--color-teal)]/10">
                   <value.icon className="h-7 w-7 text-[var(--color-teal)]" />
                 </div>
                 <h3 className="mt-6 text-xl font-semibold text-[var(--color-navy)]">
-                  {value.title}
+                  {t(value.titleKey)}
                 </h3>
                 <p className="mt-3 text-base leading-relaxed text-[var(--color-gray)]">
-                  {value.description}
+                  {t(value.descriptionKey)}
                 </p>
               </div>
             ))}
@@ -143,8 +137,8 @@ export default function AboutPage() {
       </section>
 
       <CTABanner
-        headline="Want to work with us?"
-        buttonText="Get in Touch"
+        headline={t("ctaHeadline")}
+        buttonText={t("ctaButton")}
         buttonHref="/contact"
       />
     </>
