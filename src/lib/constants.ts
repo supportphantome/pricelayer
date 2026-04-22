@@ -1,23 +1,23 @@
 export const NAV_LINKS = [
-  { label: "Home", href: "/" },
-  { label: "About", href: "/about" },
-  { label: "Blog", href: "/blog" },
-  { label: "Contact", href: "/contact" },
-];
+  {key: 'home', href: '/'},
+  {key: 'about', href: '/about'},
+  {key: 'blog', href: '/blog'},
+  {key: 'contact', href: '/contact'},
+] as const;
 
 export const FOOTER_LINKS = {
   company: [
-    { label: "About", href: "/about" },
-    { label: "Blog", href: "/blog" },
-    { label: "Contact", href: "/contact" },
+    {key: 'companyAbout', href: '/about'},
+    {key: 'companyBlog', href: '/blog'},
+    {key: 'companyContact', href: '/contact'},
   ],
   services: [
-    { label: "Pricing Architecture", href: "/signup" },
-    { label: "Packaging Strategy", href: "/signup" },
-    { label: "Monetization Audit", href: "/signup" },
+    {key: 'servicePricingArchitecture', href: '/signup'},
+    {key: 'servicePackagingStrategy', href: '/signup'},
+    {key: 'serviceMonetizationAudit', href: '/signup'},
   ],
   legal: [
-    { label: "Privacy Policy", href: "#" },
-    { label: "Terms of Service", href: "#" },
+    {key: 'legalPrivacyPolicy', href: '#'},
+    {key: 'legalTermsOfService', href: '#'},
   ],
-};
+} as const;

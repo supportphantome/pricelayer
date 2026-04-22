@@ -1,4 +1,5 @@
-import Link from "next/link";
+import {getTranslations} from 'next-intl/server';
+import {Link} from '@/i18n/navigation';
 
 interface CTABannerProps {
   headline: string;
@@ -6,7 +7,9 @@ interface CTABannerProps {
   buttonHref: string;
 }
 
-export default function CTABanner({ headline, buttonText, buttonHref }: CTABannerProps) {
+export default async function CTABanner({headline, buttonText, buttonHref}: CTABannerProps) {
+  const t = await getTranslations('CTABanner');
+
   return (
     <section className="bg-[var(--color-navy)]">
       <div className="mx-auto max-w-4xl px-6 py-20 text-center">
@@ -14,7 +17,7 @@ export default function CTABanner({ headline, buttonText, buttonHref }: CTABanne
           {headline}
         </h2>
         <p className="mx-auto mt-4 max-w-xl text-lg text-[var(--color-gray-light)]">
-          Join hundreds of SaaS companies that have already transformed their pricing into a growth engine.
+          {t('description')}
         </p>
         <Link
           href={buttonHref}

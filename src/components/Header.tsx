@@ -1,12 +1,14 @@
-"use client";
+'use client';
 
-import Link from "next/link";
-import { useState } from "react";
-import { Menu, X } from "lucide-react";
-import { NAV_LINKS } from "@/lib/constants";
+import {useState} from 'react';
+import {Menu, X} from 'lucide-react';
+import {useTranslations} from 'next-intl';
+import {Link} from '@/i18n/navigation';
+import {NAV_LINKS} from '@/lib/constants';
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const t = useTranslations('Navigation');
 
   return (
     <header className="sticky top-0 z-50 border-b border-[var(--color-border)] bg-[var(--color-white)]/95 backdrop-blur-sm">
@@ -23,21 +25,21 @@ export default function Header() {
               href={link.href}
               className="text-sm font-medium text-[var(--color-text-muted)] transition-colors hover:text-[var(--color-text)]"
             >
-              {link.label}
+              {t(link.key)}
             </Link>
           ))}
           <Link
             href="/signup"
             className="rounded-lg bg-[var(--color-blue)] px-5 py-2.5 text-sm font-semibold text-[var(--color-white)] transition-colors hover:bg-[var(--color-blue-hover)]"
           >
-            Get Started
+            {t('getStarted')}
           </Link>
         </nav>
 
         <button
           className="md:hidden"
           onClick={() => setMobileOpen(!mobileOpen)}
-          aria-label="Toggle menu"
+          aria-label={t('toggleMenu')}
         >
           {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
         </button>
@@ -53,7 +55,7 @@ export default function Header() {
                 onClick={() => setMobileOpen(false)}
                 className="text-base font-medium text-[var(--color-text-muted)] transition-colors hover:text-[var(--color-text)]"
               >
-                {link.label}
+                {t(link.key)}
               </Link>
             ))}
             <Link
@@ -61,7 +63,7 @@ export default function Header() {
               onClick={() => setMobileOpen(false)}
               className="mt-2 rounded-lg bg-[var(--color-blue)] px-5 py-2.5 text-center text-sm font-semibold text-[var(--color-white)] transition-colors hover:bg-[var(--color-blue-hover)]"
             >
-              Get Started
+              {t('getStarted')}
             </Link>
           </nav>
         </div>

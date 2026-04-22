@@ -1,23 +1,26 @@
-import Link from "next/link";
-import { ArrowRight } from "lucide-react";
-import { posts } from "./posts";
+import {ArrowRight} from 'lucide-react';
+import {getTranslations} from 'next-intl/server';
+import {Link} from '@/i18n/navigation';
+import {posts} from './posts';
 
 export const metadata = {
-  title: "Blog — PriceLayer",
+  title: 'Blog — PriceLayer',
   description:
-    "Insights on B2B SaaS pricing strategy, packaging, and monetization from the PriceLayer team.",
+    'Insights on B2B SaaS pricing strategy, packaging, and monetization from the PriceLayer team.',
 };
 
-export default function BlogPage() {
+export default async function BlogPage() {
+  const t = await getTranslations('BlogPage');
+
   return (
     <>
       <section className="bg-[var(--color-navy)]">
         <div className="mx-auto max-w-4xl px-6 py-20 text-center md:py-28">
           <h1 className="text-4xl font-bold tracking-tight text-[var(--color-white)] md:text-5xl">
-            Pricing Insights
+            {t('heroTitle')}
           </h1>
           <p className="mt-4 text-lg text-[var(--color-gray-light)]">
-            Practical thinking on SaaS pricing, packaging, and monetization strategy.
+            {t('heroSubtitle')}
           </p>
         </div>
       </section>
@@ -39,7 +42,7 @@ export default function BlogPage() {
                   {post.excerpt}
                 </p>
                 <span className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-[var(--color-blue)]">
-                  Read more <ArrowRight className="h-4 w-4" />
+                  {t('readMore')} <ArrowRight className="h-4 w-4" />
                 </span>
               </Link>
             ))}
