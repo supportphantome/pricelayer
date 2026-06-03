@@ -5,6 +5,7 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { NAV_LINKS } from "@/lib/constants";
+import LocaleSwitcher from "@/components/LocaleSwitcher";
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -28,6 +29,7 @@ export default function Header() {
               {t(link.key)}
             </Link>
           ))}
+          <LocaleSwitcher />
           <Link
             href="/signup"
             className="rounded-lg bg-[var(--color-blue)] px-5 py-2.5 text-sm font-semibold text-[var(--color-white)] transition-colors hover:bg-[var(--color-blue-hover)]"
@@ -58,6 +60,7 @@ export default function Header() {
                 {t(link.key)}
               </Link>
             ))}
+            <LocaleSwitcher />
             <Link
               href="/signup"
               onClick={() => setMobileOpen(false)}
