@@ -1,15 +1,14 @@
 import type {Metadata} from 'next';
 import {Inter} from 'next/font/google';
-import {NextIntlClientProvider} from 'next-intl';
-import {getLocale, getMessages, setRequestLocale} from 'next-intl/server';
+import {getLocale} from 'next-intl/server';
 import './globals.css';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 
 const inter = Inter({
   variable: '--font-inter',
   subsets: ['latin'],
 });
+
+const RTL_LOCALES = new Set(['ar', 'he', 'fa', 'ur']);
 
 export const metadata: Metadata = {
   title: 'PriceLayer — B2B SaaS Pricing Consultancy',
@@ -29,18 +28,12 @@ export default async function RootLayout({
   children: React.ReactNode;
 }>) {
   const locale = await getLocale();
-  setRequestLocale(locale);
-  const messages = await getMessages();
-  const dir = locale === 'ar' ? 'rtl' : 'ltr';
+  const dir = RTL_LOCALES.has(locale.split('-')[0]) ? 'rtl' : 'ltr';
 
   return (
     <html lang={locale} dir={dir} className={`${inter.variable} h-full`}>
       <body className="min-h-full flex flex-col font-primary text-[var(--color-text)] bg-[var(--color-white)]">
-        <NextIntlClientProvider messages={messages}>
-          <Header />
-          <main className="flex-1">{children}</main>
-          <Footer />
-        </NextIntlClientProvider>
+        {children}
       </body>
     </html>
   );

@@ -1,8 +1,10 @@
 import type {ReactNode} from 'react';
 import {notFound} from 'next/navigation';
-import {hasLocale} from 'next-intl';
-import {setRequestLocale} from 'next-intl/server';
+import {NextIntlClientProvider, hasLocale} from 'next-intl';
+import {getMessages, setRequestLocale} from 'next-intl/server';
 import {routing} from '@/i18n/routing';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({locale}));
@@ -22,6 +24,13 @@ export default async function LocaleLayout({
   }
 
   setRequestLocale(locale);
+  const messages = await getMessages();
 
-  return children;
+  return (
+    <NextIntlClientProvider messages={messages}>
+      <Header />
+      <main className="flex-1">{children}</main>
+      <Footer />
+    </NextIntlClientProvider>
+  );
 }

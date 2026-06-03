@@ -1,3 +1,4 @@
+import { Link } from "@/i18n/navigation";
 import {
   Layers,
   Package,
@@ -7,38 +8,73 @@ import {
   TrendingUp,
   DollarSign,
   Users,
-} from 'lucide-react';
-import {getTranslations} from 'next-intl/server';
-import {Link} from '@/i18n/navigation';
-import CTABanner from '@/components/CTABanner';
-
-const STATS = [
-  {icon: Users, value: '200+', labelKey: 'statsCompanies'},
-  {icon: TrendingUp, value: '23%', labelKey: 'statsUplift'},
-  {icon: DollarSign, value: '$2.1B', labelKey: 'statsArr'},
-  {icon: BarChart3, value: '50+', labelKey: 'statsMigrations'},
-] as const;
-
-const SERVICES = [
-  {icon: Layers, titleKey: 'service1Title', descriptionKey: 'service1Description'},
-  {icon: Package, titleKey: 'service2Title', descriptionKey: 'service2Description'},
-  {icon: Search, titleKey: 'service3Title', descriptionKey: 'service3Description'},
-] as const;
-
-const STEPS = [
-  {step: '01', titleKey: 'step1Title', descriptionKey: 'step1Description'},
-  {step: '02', titleKey: 'step2Title', descriptionKey: 'step2Description'},
-  {step: '03', titleKey: 'step3Title', descriptionKey: 'step3Description'},
-] as const;
-
-const TESTIMONIALS = [
-  {quoteKey: 'testimonial1Quote', name: 'Sarah Chen', roleKey: 'testimonial1Role'},
-  {quoteKey: 'testimonial2Quote', name: 'Marcus Rivera', roleKey: 'testimonial2Role'},
-  {quoteKey: 'testimonial3Quote', name: 'Amira Okafor', roleKey: 'testimonial3Role'},
-] as const;
+} from "lucide-react";
+import CTABanner from "@/components/CTABanner";
+import { getTranslations } from "next-intl/server";
 
 export default async function Home() {
-  const t = await getTranslations('HomePage');
+  const t = await getTranslations("HomePage");
+
+  const STATS = [
+    { icon: Users, value: t("stats.companiesValue"), label: t("stats.companiesLabel") },
+    { icon: TrendingUp, value: t("stats.revenueValue"), label: t("stats.revenueLabel") },
+    { icon: DollarSign, value: t("stats.arrValue"), label: t("stats.arrLabel") },
+    { icon: BarChart3, value: t("stats.migrationsValue"), label: t("stats.migrationsLabel") },
+  ];
+
+  const SERVICES = [
+    {
+      icon: Layers,
+      title: t("services.architecture.title"),
+      description: t("services.architecture.description"),
+    },
+    {
+      icon: Package,
+      title: t("services.packaging.title"),
+      description: t("services.packaging.description"),
+    },
+    {
+      icon: Search,
+      title: t("services.audit.title"),
+      description: t("services.audit.description"),
+    },
+  ];
+
+  const STEPS = [
+    {
+      step: "01",
+      title: t("steps.diagnostic.title"),
+      description: t("steps.diagnostic.description"),
+    },
+    {
+      step: "02",
+      title: t("steps.design.title"),
+      description: t("steps.design.description"),
+    },
+    {
+      step: "03",
+      title: t("steps.deploy.title"),
+      description: t("steps.deploy.description"),
+    },
+  ];
+
+  const TESTIMONIALS = [
+    {
+      quote: t("testimonials.chen.quote"),
+      name: t("testimonials.chen.name"),
+      title: t("testimonials.chen.title"),
+    },
+    {
+      quote: t("testimonials.rivera.quote"),
+      name: t("testimonials.rivera.name"),
+      title: t("testimonials.rivera.title"),
+    },
+    {
+      quote: t("testimonials.okafor.quote"),
+      name: t("testimonials.okafor.name"),
+      title: t("testimonials.okafor.title"),
+    },
+  ];
 
   return (
     <>
@@ -49,27 +85,27 @@ export default async function Home() {
         <div className="relative mx-auto max-w-7xl px-6 pb-24 pt-20 md:pb-32 md:pt-28">
           <div className="mx-auto max-w-3xl text-center">
             <span className="inline-block rounded-full border border-[var(--color-blue)]/30 bg-[var(--color-blue)]/10 px-4 py-1.5 text-sm font-medium text-[var(--color-blue)]">
-              {t('badge')}
+              {t("hero.badge")}
             </span>
             <h1 className="mt-8 text-4xl font-bold leading-tight tracking-tight text-[var(--color-white)] md:text-6xl md:leading-tight">
-              {t('heroTitle')}
+              {t("hero.title")}
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-[var(--color-gray-light)] md:text-xl">
-              {t('heroSubtitle')}
+              {t("hero.subtitle")}
             </p>
             <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
               <Link
                 href="/signup"
                 className="inline-flex items-center gap-2 rounded-lg bg-[var(--color-blue)] px-8 py-3.5 text-base font-semibold text-[var(--color-white)] transition-colors hover:bg-[var(--color-blue-hover)]"
               >
-                {t('heroPrimaryCta')}
+                {t("hero.cta")}
                 <ArrowRight className="h-4 w-4" />
               </Link>
               <Link
                 href="/about"
                 className="inline-flex items-center gap-2 rounded-lg border border-white/20 px-8 py-3.5 text-base font-semibold text-[var(--color-white)] transition-colors hover:bg-white/5"
               >
-                {t('heroSecondaryCta')}
+                {t("hero.ctaSecondary")}
               </Link>
             </div>
           </div>
@@ -81,12 +117,12 @@ export default async function Home() {
         <div className="mx-auto max-w-7xl px-6 py-12">
           <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
             {STATS.map((stat) => (
-              <div key={stat.labelKey} className="text-center">
+              <div key={stat.label} className="text-center">
                 <stat.icon className="mx-auto h-6 w-6 text-[var(--color-teal)]" />
                 <p className="mt-3 text-3xl font-bold tracking-tight text-[var(--color-navy)]">
                   {stat.value}
                 </p>
-                <p className="mt-1 text-sm text-[var(--color-gray)]">{t(stat.labelKey)}</p>
+                <p className="mt-1 text-sm text-[var(--color-gray)]">{stat.label}</p>
               </div>
             ))}
           </div>
@@ -98,26 +134,26 @@ export default async function Home() {
         <div className="mx-auto max-w-7xl px-6 py-20 md:py-28">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-[var(--color-navy)] md:text-4xl">
-              {t('servicesTitle')}
+              {t("services.heading")}
             </h2>
             <p className="mt-4 text-lg text-[var(--color-gray)]">
-              {t('servicesSubtitle')}
+              {t("services.subheading")}
             </p>
           </div>
           <div className="mt-16 grid gap-8 md:grid-cols-3">
             {SERVICES.map((service) => (
               <div
-                key={service.titleKey}
+                key={service.title}
                 className="rounded-xl border border-[var(--color-border)] bg-[var(--color-white)] p-8 transition-shadow hover:shadow-lg"
               >
                 <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-[var(--color-blue)]/10">
                   <service.icon className="h-6 w-6 text-[var(--color-blue)]" />
                 </div>
                 <h3 className="mt-6 text-xl font-semibold text-[var(--color-navy)]">
-                  {t(service.titleKey)}
+                  {service.title}
                 </h3>
                 <p className="mt-3 text-base leading-relaxed text-[var(--color-gray)]">
-                  {t(service.descriptionKey)}
+                  {service.description}
                 </p>
               </div>
             ))}
@@ -130,10 +166,10 @@ export default async function Home() {
         <div className="mx-auto max-w-7xl px-6 py-20 md:py-28">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-[var(--color-navy)] md:text-4xl">
-              {t('howItWorksTitle')}
+              {t("howItWorks.heading")}
             </h2>
             <p className="mt-4 text-lg text-[var(--color-gray)]">
-              {t('howItWorksSubtitle')}
+              {t("howItWorks.subheading")}
             </p>
           </div>
           <div className="mt-16 grid gap-8 md:grid-cols-3">
@@ -143,10 +179,10 @@ export default async function Home() {
                   {step.step}
                 </span>
                 <h3 className="mt-4 text-xl font-semibold text-[var(--color-navy)]">
-                  {t(step.titleKey)}
+                  {step.title}
                 </h3>
                 <p className="mt-3 text-base leading-relaxed text-[var(--color-gray)]">
-                  {t(step.descriptionKey)}
+                  {step.description}
                 </p>
               </div>
             ))}
@@ -158,12 +194,10 @@ export default async function Home() {
       <section className="bg-[var(--color-light)]">
         <div className="mx-auto max-w-4xl px-6 py-20 text-center md:py-28">
           <h2 className="text-3xl font-bold tracking-tight text-[var(--color-navy)] md:text-4xl">
-            {t('positioningTitleLine1')}
-            <br />
-            {t('positioningTitleLine2')}
+            {t("positioning.heading")}
           </h2>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-[var(--color-gray)]">
-            {t('positioningDescription')}
+            {t("positioning.description")}
           </p>
         </div>
       </section>
@@ -172,24 +206,24 @@ export default async function Home() {
       <section className="bg-[var(--color-white)]">
         <div className="mx-auto max-w-7xl px-6 py-20 md:py-28">
           <h2 className="text-center text-3xl font-bold tracking-tight text-[var(--color-navy)] md:text-4xl">
-            {t('testimonialsTitle')}
+            {t("testimonials.heading")}
           </h2>
           <div className="mt-16 grid gap-8 md:grid-cols-3">
-            {TESTIMONIALS.map((item) => (
+            {TESTIMONIALS.map((testimonial) => (
               <div
-                key={item.name}
+                key={testimonial.name}
                 className="rounded-xl border border-[var(--color-border)] bg-[var(--color-light)] p-8"
               >
                 <p className="text-base leading-relaxed text-[var(--color-text-muted)]">
-                  &ldquo;{t(item.quoteKey)}&rdquo;
+                  &ldquo;{testimonial.quote}&rdquo;
                 </p>
                 <div className="mt-6 flex items-center gap-3">
                   <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[var(--color-blue)]/10 text-sm font-bold text-[var(--color-blue)]">
-                    {item.name.charAt(0)}
+                    {testimonial.name.charAt(0)}
                   </div>
                   <div>
-                    <p className="text-sm font-semibold text-[var(--color-navy)]">{item.name}</p>
-                    <p className="text-sm text-[var(--color-gray)]">{t(item.roleKey)}</p>
+                    <p className="text-sm font-semibold text-[var(--color-navy)]">{testimonial.name}</p>
+                    <p className="text-sm text-[var(--color-gray)]">{testimonial.title}</p>
                   </div>
                 </div>
               </div>
@@ -200,8 +234,8 @@ export default async function Home() {
 
       {/* Final CTA */}
       <CTABanner
-        headline={t('finalCtaHeadline')}
-        buttonText={t('finalCtaButton')}
+        headline={t("cta.headline")}
+        buttonText={t("cta.buttonText")}
         buttonHref="/signup"
       />
     </>
