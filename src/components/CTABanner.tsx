@@ -1,5 +1,5 @@
-import {getTranslations} from 'next-intl/server';
-import {Link} from '@/i18n/navigation';
+import { Link } from "@/i18n/navigation";
+import { getTranslations } from "next-intl/server";
 
 interface CTABannerProps {
   headline: string;
@@ -7,8 +7,8 @@ interface CTABannerProps {
   buttonHref: string;
 }
 
-export default async function CTABanner({headline, buttonText, buttonHref}: CTABannerProps) {
-  const t = await getTranslations('CTABanner');
+export default async function CTABanner({ headline, buttonText, buttonHref }: CTABannerProps) {
+  const t = await getTranslations("CTABanner");
 
   return (
     <section className="bg-[var(--color-navy)]">
@@ -17,7 +17,7 @@ export default async function CTABanner({headline, buttonText, buttonHref}: CTAB
           {headline}
         </h2>
         <p className="mx-auto mt-4 max-w-xl text-lg text-[var(--color-gray-light)]">
-          {t('description')}
+          {t("description")}
         </p>
         <Link
           href={buttonHref}

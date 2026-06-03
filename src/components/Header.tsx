@@ -1,21 +1,22 @@
-'use client';
+"use client";
 
-import {useState} from 'react';
-import {Menu, X} from 'lucide-react';
-import {useTranslations} from 'next-intl';
-import {Link} from '@/i18n/navigation';
-import {NAV_LINKS} from '@/lib/constants';
+import { Link } from "@/i18n/navigation";
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
+import { useTranslations } from "next-intl";
+import { NAV_LINKS } from "@/lib/constants";
+import LocaleSwitcher from "@/components/LocaleSwitcher";
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
-  const t = useTranslations('Navigation');
+  const t = useTranslations("Navigation");
 
   return (
     <header className="sticky top-0 z-50 border-b border-[var(--color-border)] bg-[var(--color-white)]/95 backdrop-blur-sm">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         <Link href="/" className="flex items-center gap-1 text-xl font-bold tracking-tight">
-          <span className="text-[var(--color-blue)]">Price</span>
-          <span className="text-[var(--color-navy)]">Layer</span>
+          <span className="text-[var(--color-blue)]">{t("brandPrice")}</span>
+          <span className="text-[var(--color-navy)]">{t("brandLayer")}</span>
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">
@@ -28,18 +29,19 @@ export default function Header() {
               {t(link.key)}
             </Link>
           ))}
+          <LocaleSwitcher />
           <Link
             href="/signup"
             className="rounded-lg bg-[var(--color-blue)] px-5 py-2.5 text-sm font-semibold text-[var(--color-white)] transition-colors hover:bg-[var(--color-blue-hover)]"
           >
-            {t('getStarted')}
+            {t("getStarted")}
           </Link>
         </nav>
 
         <button
           className="md:hidden"
           onClick={() => setMobileOpen(!mobileOpen)}
-          aria-label={t('toggleMenu')}
+          aria-label={t("toggleMenu")}
         >
           {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
         </button>
@@ -58,12 +60,13 @@ export default function Header() {
                 {t(link.key)}
               </Link>
             ))}
+            <LocaleSwitcher />
             <Link
               href="/signup"
               onClick={() => setMobileOpen(false)}
               className="mt-2 rounded-lg bg-[var(--color-blue)] px-5 py-2.5 text-center text-sm font-semibold text-[var(--color-white)] transition-colors hover:bg-[var(--color-blue-hover)]"
             >
-              {t('getStarted')}
+              {t("getStarted")}
             </Link>
           </nav>
         </div>

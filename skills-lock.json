@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "skills": {
+    "css-i18n": {
+      "source": "globalize-now/globalize-skills",
+      "sourceType": "github",
+      "skillPath": "skills/css-i18n/SKILL.md",
+      "computedHash": "ffec6006a1486cb21fdfb51a3068f301db5628e3d685b82e43fae8ef2560e095"
+    },
+    "globalize-now-cli-setup": {
+      "source": "globalize-now/globalize-skills",
+      "sourceType": "github",
+      "skillPath": "skills/globalize-now-cli-setup/SKILL.md",
+      "computedHash": "2926005f29bfd4ba5f88998a1270a921d5d3366dbfc5e2c5b68a51f2b9b33815"
+    },
+    "globalize-now-cli-use": {
+      "source": "globalize-now/globalize-skills",
+      "sourceType": "github",
+      "skillPath": "skills/globalize-now-cli-use/SKILL.md",
+      "computedHash": "0280ffa4ff1b5013f53ae3e33ab8511f69739e985918bec563bf597c00e17ea7"
+    },
+    "i18n-guide": {
+      "source": "globalize-now/globalize-skills",
+      "sourceType": "github",
+      "skillPath": "skills/i18n-guide/SKILL.md",
+      "computedHash": "7b977a8d932466bf778b087aace1f4186415b78b7a08a306c2f109af5875435e"
+    }
+  }
+}
