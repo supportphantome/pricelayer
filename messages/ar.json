@@ -1,262 +1,262 @@
 {
-  "Navigation": {
-    "brandPrice": "Price",
-    "brandLayer": "Layer",
-    "home": "Home",
-    "about": "About",
-    "blog": "Blog",
-    "contact": "Contact",
-    "getStarted": "Get Started",
-    "toggleMenu": "Toggle menu"
-  },
-  "Footer": {
-    "brandPrice": "Price",
-    "brandLayer": "Layer",
-    "tagline": "Strategy-led pricing optimization for B2B SaaS companies ready to unlock trapped revenue.",
-    "companyHeading": "Company",
-    "servicesHeading": "Services",
-    "legalHeading": "Legal",
-    "about": "About",
-    "blog": "Blog",
-    "contact": "Contact",
-    "pricingArchitecture": "Pricing Architecture",
-    "packagingStrategy": "Packaging Strategy",
-    "monetizationAudit": "Monetization Audit",
-    "privacyPolicy": "Privacy Policy",
-    "termsOfService": "Terms of Service",
-    "linkedin": "LinkedIn",
-    "twitter": "Twitter",
-    "copyright": "PriceLayer. All rights reserved."
-  },
-  "CTABanner": {
-    "description": "Join hundreds of SaaS companies that have already transformed their pricing into a growth engine."
-  },
-  "HomePage": {
-    "hero": {
-      "badge": "B2B SaaS Pricing Consultancy",
-      "title": "Your pricing is leaving money on the table.",
-      "subtitle": "PriceLayer helps B2B SaaS companies unlock revenue trapped in their pricing. We design tiers, packaging, and monetization strategies that grow revenue and reduce churn.",
-      "cta": "Book a Strategy Call",
-      "ctaSecondary": "See Our Approach"
-    },
-    "stats": {
-      "companiesValue": "200+",
-      "companiesLabel": "SaaS Companies Advised",
-      "revenueValue": "23%",
-      "revenueLabel": "Avg Revenue Uplift",
-      "arrValue": "$2.1B",
-      "arrLabel": "Optimized ARR",
-      "migrationsValue": "50+",
-      "migrationsLabel": "Pricing Migrations Led"
-    },
-    "services": {
-      "heading": "Pricing strategy, not pricing software",
-      "subheading": "We work alongside your team to design pricing that drives growth. No platform lock-in, no ongoing software fees.",
-      "architecture": {
-        "title": "Pricing Architecture",
-        "description": "Design optimal tiers, feature gating, and price points backed by willingness-to-pay research and competitive analysis."
-      },
-      "packaging": {
-        "title": "Packaging Strategy",
-        "description": "Bundle features into packages that drive expansion revenue, reduce decision friction, and align with how customers actually buy."
-      },
-      "audit": {
-        "title": "Monetization Audit",
-        "description": "Identify revenue leaks in your current model. We analyze your pricing, usage data, and churn patterns to find quick wins."
-      }
-    },
-    "howItWorks": {
-      "heading": "How it works",
-      "subheading": "A proven three-phase process that minimizes risk and maximizes impact."
-    },
-    "steps": {
-      "diagnostic": {
-        "title": "Diagnostic",
-        "description": "We audit your current pricing, interview customers, and benchmark against your competitive landscape."
-      },
-      "design": {
-        "title": "Design",
-        "description": "We model and test new pricing structures, run simulations, and design packaging that maps to your value metrics."
-      },
-      "deploy": {
-        "title": "Deploy",
-        "description": "We help you roll out pricing changes with migration plans, change communication, and churn mitigation strategies."
-      }
-    },
-    "positioning": {
-      "heading": "You don't need another billing tool. You need a pricing strategy.",
-      "description": "Paddle, Stripe, and Chargebee handle billing infrastructure. But the right infrastructure with the wrong pricing still leaves revenue on the table. PriceLayer is the strategy layer that sits above your billing stack — ensuring every tier, feature gate, and price point is optimized for growth."
-    },
-    "testimonials": {
-      "heading": "Trusted by SaaS leaders",
-      "chen": {
-        "quote": "PriceLayer helped us restructure our pricing from a flat rate to usage-based tiers. Our expansion revenue increased 34% in the first quarter.",
-        "name": "Sarah Chen",
-        "title": "VP of Revenue, DataSync"
-      },
-      "rivera": {
-        "quote": "We were underpricing our enterprise tier by 40%. PriceLayer's audit paid for itself in the first month.",
-        "name": "Marcus Rivera",
-        "title": "CEO, CloudQueue"
-      },
-      "okafor": {
-        "quote": "The packaging redesign reduced our sales cycle by two weeks. Prospects could self-select the right tier without a demo.",
-        "name": "Amira Okafor",
-        "title": "Head of Growth, FormStack Pro"
-      }
+  "AboutPage": {
+    "approach": {
+      "heading": "نهجنا",
+      "paragraph1": "تجمع PriceLayer بين البحث الكمي الصارم والخبرة العميقة في مجال SaaS. يبدأ كل تفاعل بفهم عملائك والمشهد التنافسي الخاص بك وأهداف النمو الخاصة بك.",
+      "paragraph2": "نستخدم مزيجاً من <strong>المقارنة التنافسية</strong> و <strong>بحث الرغبة في الدفع</strong> و <strong>تحليل مقاييس القيمة</strong> لتصميم أسعار تتوافق مع ما تفرضه مع القيمة التي يتلقاها عملاؤك فعلياً.",
+      "paragraph3": "النتيجة: معدلات تحويل أعلى وإيرادات توسع أفضل واستنزاف أقل ونموذج تسعير يتسع مع عملك."
     },
     "cta": {
-      "headline": "Ready to stop guessing on pricing?",
-      "buttonText": "Book a Free Strategy Call"
-    }
-  },
-  "AboutPage": {
-    "mission": {
-      "heading": "About PriceLayer",
-      "description": "We believe pricing is the most underleveraged growth lever in SaaS. Most companies spend months on product and minutes on pricing. We exist to change that."
+      "buttonText": "تواصل معنا",
+      "headline": "هل تريد العمل معنا؟"
     },
-    "approach": {
-      "heading": "Our Approach",
-      "paragraph1": "PriceLayer combines rigorous quantitative research with deep SaaS domain expertise. Every engagement starts with understanding your customers, your competitive landscape, and your growth objectives.",
-      "paragraph2": "We use a combination of <strong>competitive benchmarking</strong>, <strong>willingness-to-pay research</strong>, and <strong>value metric analysis</strong> to design pricing that aligns what you charge with the value your customers actually receive.",
-      "paragraph3": "The result: higher conversion rates, better expansion revenue, lower churn, and a pricing model that scales with your business."
+    "mission": {
+      "description": "نعتقد أن التسعير هو أكثر رافعة نمو غير مستخدمة في SaaS. تقضي معظم الشركات أشهراً على المنتج ودقائق على التسعير. نحن موجودون لتغيير ذلك.",
+      "heading": "حول PriceLayer"
     },
     "team": {
-      "heading": "Meet the Team",
-      "voss": {
-        "name": "Elena Voss",
-        "title": "Founder & Lead Strategist",
-        "bio": "Former VP of Pricing at a $500M ARR SaaS company. 12 years of experience in B2B pricing strategy and monetization."
+      "heading": "تعرف على الفريق",
+      "kim": {
+        "bio": "دكتوراه في الاقتصاد السلوكي. يقود بحث الرغبة في الدفع وتحليل الاقتران لكل تفاعل عميل.",
+        "name": "دانيال كيم",
+        "title": "مدير البحث"
       },
       "okonkwo": {
-        "name": "James Okonkwo",
-        "title": "Senior Pricing Analyst",
-        "bio": "Data scientist turned pricing specialist. Built pricing models for 80+ SaaS companies across fintech, DevTools, and MarTech."
+        "bio": "عالم بيانات تحول إلى متخصص في التسعير. بنى نماذج تسعير لأكثر من 80 شركة SaaS عبر fintech و DevTools و MarTech.",
+        "name": "جيمس أوكونكو",
+        "title": "محلل التسعير الأول"
       },
       "sharma": {
-        "name": "Priya Sharma",
-        "title": "Packaging & GTM Lead",
-        "bio": "10 years in product marketing and go-to-market strategy. Expert in tier design, feature gating, and launch communication."
+        "bio": "10 سنوات في تسويق المنتجات واستراتيجية الدخول إلى السوق. خبير في تصميم الطبقات وحدود الميزات واتصالات الإطلاق.",
+        "name": "بريا شارما",
+        "title": "قيادة التغليف و GTM"
       },
-      "kim": {
-        "name": "Daniel Kim",
-        "title": "Research Director",
-        "bio": "PhD in behavioral economics. Leads willingness-to-pay research and conjoint analysis for every client engagement."
+      "voss": {
+        "bio": "نائب رئيس التسعير السابق في شركة SaaS بقيمة 500 مليون دولار ARR. 12 سنة من الخبرة في استراتيجية التسعير B2B والتحقق من الإيرادات.",
+        "name": "إيلينا فوس",
+        "title": "المؤسس والاستراتيجي الرئيسي"
       }
     },
     "values": {
-      "heading": "Our Values",
       "evidence": {
-        "title": "Evidence Over Intuition",
-        "description": "Every recommendation is backed by data — willingness-to-pay research, competitive benchmarking, and usage analytics. We don't guess."
+        "description": "كل توصية مدعومة بالبيانات — بحث الرغبة في الدفع والمقارنة التنافسية وتحليلات الاستخدام. نحن لا نخمن.",
+        "title": "الأدلة على الحدس"
+      },
+      "heading": "قيمنا",
+      "partnership": {
+        "description": "التسعير ليس مشروعاً لمرة واحدة. نحن نبني علاقات مستمرة ونعود لمراجعات التسعير مع تطور منتجك وسوقك.",
+        "title": "الشراكة طويلة الأجل"
       },
       "revenue": {
-        "title": "Revenue Without Resentment",
-        "description": "Good pricing grows revenue and makes customers feel they're getting a fair deal. We optimize for long-term trust, not short-term extraction."
-      },
-      "partnership": {
-        "title": "Long-Term Partnership",
-        "description": "Pricing isn't a one-time project. We build ongoing relationships and return for pricing reviews as your product and market evolve."
-      }
-    },
-    "cta": {
-      "headline": "Want to work with us?",
-      "buttonText": "Get in Touch"
-    }
-  },
-  "ContactPage": {
-    "title": "Let's talk pricing.",
-    "subtitle": "Tell us about your company and we'll get back to you within one business day.",
-    "success": {
-      "title": "Message received!",
-      "message": "We'll get back to you within one business day."
-    },
-    "form": {
-      "nameLabel": "Name",
-      "namePlaceholder": "Your name",
-      "emailLabel": "Email",
-      "emailPlaceholder": "you@company.com",
-      "companyLabel": "Company",
-      "companyPlaceholder": "Company name",
-      "sizeLabel": "Company size",
-      "sizePlaceholder": "Select size",
-      "messageLabel": "Message",
-      "messagePlaceholder": "Tell us about your pricing challenge...",
-      "submitButton": "Send Message"
-    },
-    "companySizes": {
-      "1to10": "1-10 employees",
-      "11to50": "11-50 employees",
-      "51to200": "51-200 employees",
-      "201to1000": "201-1000 employees",
-      "1000plus": "1000+ employees"
-    },
-    "sidebar": {
-      "emailTitle": "Email us",
-      "responseTimeTitle": "Response time",
-      "responseTimeText": "We respond within one business day, usually faster.",
-      "expectTitle": "What to expect",
-      "expectText": "A 30-minute intro call to understand your current pricing model, challenges, and growth goals. No pitch, just a conversation."
-    }
-  },
-  "SignupPage": {
-    "title": "Get started with a free pricing diagnostic.",
-    "subtitle": "Tell us about your company and we'll schedule a complimentary 30-minute pricing review.",
-    "success": {
-      "title": "You're in!",
-      "message": "We'll reach out within one business day to schedule your free diagnostic call."
-    },
-    "form": {
-      "nameLabel": "Full name",
-      "namePlaceholder": "Your full name",
-      "emailLabel": "Work email",
-      "emailPlaceholder": "you@company.com",
-      "companyLabel": "Company name",
-      "companyPlaceholder": "Company name",
-      "arrLabel": "Current ARR range",
-      "arrPlaceholder": "Select range",
-      "challengeLabel": "Biggest pricing challenge",
-      "challengePlaceholder": "e.g. We're not sure if our tiers are right, we think we're underpricing enterprise...",
-      "submitButton": "Request Free Diagnostic"
-    },
-    "arrRanges": {
-      "preRevenue": "Pre-revenue",
-      "0to1m": "$0 - $1M ARR",
-      "1mTo5m": "$1M - $5M ARR",
-      "5mTo20m": "$5M - $20M ARR",
-      "20mTo100m": "$20M - $100M ARR",
-      "100mPlus": "$100M+ ARR"
-    },
-    "nextSteps": {
-      "heading": "What happens next?",
-      "diagnostic": {
-        "title": "Free Diagnostic Call",
-        "description": "We review your current pricing model, identify quick wins, and assess the opportunity."
-      },
-      "proposal": {
-        "title": "Custom Proposal",
-        "description": "Based on the diagnostic, we build a tailored engagement plan with clear deliverables and timeline."
-      },
-      "transformation": {
-        "title": "Pricing Transformation",
-        "description": "We execute the strategy together — from research through design to rollout support."
+        "description": "التسعير الجيد يزيد الإيرادات ويجعل العملاء يشعرون أنهم يحصلون على صفقة عادلة. نحن نحسّن للثقة طويلة الأجل وليس الاستخراج قصير الأجل.",
+        "title": "الإيرادات بدون استياء"
       }
     }
   },
   "BlogPage": {
-    "title": "Pricing Insights",
-    "subtitle": "Practical thinking on SaaS pricing, packaging, and monetization strategy.",
-    "readMore": "Read more",
     "metadata": {
-      "title": "Blog — PriceLayer",
-      "description": "Insights on B2B SaaS pricing strategy, packaging, and monetization from the PriceLayer team."
-    }
+      "description": "رؤى حول استراتيجية تسعير B2B SaaS والتغليف والتحقق من الإيرادات من فريق PriceLayer.",
+      "title": "المدونة — PriceLayer"
+    },
+    "readMore": "اقرأ المزيد",
+    "subtitle": "تفكير عملي حول استراتيجية تسعير SaaS والتغليف والتحقق من الإيرادات.",
+    "title": "رؤى التسعير"
   },
   "BlogPost": {
-    "backToBlog": "Back to Blog",
+    "backToBlog": "العودة إلى المدونة",
     "cta": {
-      "headline": "Want pricing advice tailored to your business?",
-      "buttonText": "Book a Free Diagnostic"
+      "buttonText": "احجز تشخيصاً مجانياً",
+      "headline": "هل تريد نصيحة تسعير مخصصة لعملك؟"
     }
+  },
+  "CTABanner": {
+    "description": "انضم إلى مئات شركات SaaS التي حولت بالفعل أسعارها إلى محرك نمو."
+  },
+  "ContactPage": {
+    "companySizes": {
+      "1000plus": "1000+ موظفاً",
+      "11to50": "11-50 موظفاً",
+      "1to10": "1-10 موظفين",
+      "201to1000": "201-1000 موظفاً",
+      "51to200": "51-200 موظفاً"
+    },
+    "form": {
+      "companyLabel": "الشركة",
+      "companyPlaceholder": "اسم الشركة",
+      "emailLabel": "البريد الإلكتروني",
+      "emailPlaceholder": "you@company.com",
+      "messageLabel": "الرسالة",
+      "messagePlaceholder": "أخبرنا عن تحدي التسعير الخاص بك...",
+      "nameLabel": "الاسم",
+      "namePlaceholder": "اسمك",
+      "sizeLabel": "حجم الشركة",
+      "sizePlaceholder": "اختر الحجم",
+      "submitButton": "إرسال الرسالة"
+    },
+    "sidebar": {
+      "emailTitle": "راسلنا بالبريد الإلكتروني",
+      "expectText": "استدعاء تعريفي مدته 30 دقيقة لفهم نموذج التسعير الحالي والتحديات وأهداف النمو. لا عرض توضيحي، فقط محادثة.",
+      "expectTitle": "ما يمكن توقعه",
+      "responseTimeText": "نرد في غضون يوم عمل واحد، عادة أسرع.",
+      "responseTimeTitle": "وقت الرد"
+    },
+    "subtitle": "أخبرنا عن شركتك وسنرد عليك في غضون يوم عمل واحد.",
+    "success": {
+      "message": "سنرد عليك في غضون يوم عمل واحد.",
+      "title": "تم استقبال الرسالة!"
+    },
+    "title": "دعنا نتحدث عن التسعير."
+  },
+  "Footer": {
+    "about": "حول",
+    "blog": "المدونة",
+    "brandLayer": "الطبقة",
+    "brandPrice": "السعر",
+    "companyHeading": "الشركة",
+    "contact": "اتصل بنا",
+    "copyright": "PriceLayer. جميع الحقوق محفوظة.",
+    "legalHeading": "القانونية",
+    "linkedin": "LinkedIn",
+    "monetizationAudit": "تدقيق استراتيجية الإيرادات",
+    "packagingStrategy": "استراتيجية التغليف",
+    "pricingArchitecture": "هندسة التسعير",
+    "privacyPolicy": "سياسة الخصوصية",
+    "servicesHeading": "الخدمات",
+    "tagline": "تحسين الأسعار الموجه بالاستراتيجية لشركات B2B SaaS المستعدة لفتح الإيرادات المحتجزة.",
+    "termsOfService": "شروط الخدمة",
+    "twitter": "Twitter"
+  },
+  "HomePage": {
+    "cta": {
+      "buttonText": "احجز استدعاء استراتيجي مجاني",
+      "headline": "هل أنت مستعد للتوقف عن التخمين في التسعير؟"
+    },
+    "hero": {
+      "badge": "استشارات تسعير B2B SaaS",
+      "cta": "احجز استدعاء استراتيجي",
+      "ctaSecondary": "اطلع على نهجنا",
+      "subtitle": "تساعد PriceLayer شركات B2B SaaS على فتح الإيرادات المحتجزة في أسعارها. نحن نصمم الطبقات والتغليف واستراتيجيات التحقق من الإيرادات التي تزيد الإيرادات وتقلل الاستنزاف.",
+      "title": "أسعارك تترك أموالاً على الطاولة."
+    },
+    "howItWorks": {
+      "heading": "كيف يعمل",
+      "subheading": "عملية مثبتة من ثلاث مراحل تقلل المخاطر وتزيد التأثير."
+    },
+    "positioning": {
+      "description": "تتعامل Paddle و Stripe و Chargebee مع البنية التحتية للفواتير. لكن البنية التحتية الصحيحة مع التسعير الخاطئ لا تزال تترك إيرادات على الطاولة. PriceLayer هي طبقة الاستراتيجية التي تقع فوق مكدس الفواتير الخاص بك — مما يضمن تحسين كل طبقة وحد ميزة ونقطة سعر للنمو.",
+      "heading": "أنت لا تحتاج إلى أداة فواتير أخرى. أنت تحتاج إلى استراتيجية تسعير."
+    },
+    "services": {
+      "architecture": {
+        "description": "صمم طبقات مثالية وحدود الميزات ونقاط الأسعار مدعومة ببحث الرغبة في الدفع والتحليل التنافسي.",
+        "title": "هندسة التسعير"
+      },
+      "audit": {
+        "description": "حدد تسريب الإيرادات في نموذجك الحالي. نحلل أسعارك وبيانات الاستخدام وأنماط الاستنزاف للعثور على الفرص السريعة.",
+        "title": "تدقيق استراتيجية الإيرادات"
+      },
+      "heading": "استراتيجية التسعير، وليس برنامج التسعير",
+      "packaging": {
+        "description": "اجمع الميزات في حزم تدفع إيرادات التوسع وتقلل احتكاك القرار وتتوافق مع كيفية شراء العملاء فعلياً.",
+        "title": "استراتيجية التغليف"
+      },
+      "subheading": "نعمل جنباً إلى جنب مع فريقك لتصميم أسعار تدفع النمو. لا توجد قفل منصة، لا توجد رسوم برنامج مستمرة."
+    },
+    "stats": {
+      "arrLabel": "ARR محسّن",
+      "arrValue": "$2.1B",
+      "companiesLabel": "شركات SaaS استشارية",
+      "companiesValue": "200+",
+      "migrationsLabel": "هجرات التسعير المنفذة",
+      "migrationsValue": "50+",
+      "revenueLabel": "متوسط زيادة الإيرادات",
+      "revenueValue": "23%"
+    },
+    "steps": {
+      "deploy": {
+        "description": "نساعدك على طرح تغييرات الأسعار مع خطط الهجرة واتصالات التغيير واستراتيجيات تخفيف الاستنزاف.",
+        "title": "النشر"
+      },
+      "design": {
+        "description": "نحن نصمم هياكل التسعير الجديدة ونختبرها ونجري محاكاة ونصمم التغليف الذي يرسم خرائط لمقاييس القيمة الخاصة بك.",
+        "title": "التصميم"
+      },
+      "diagnostic": {
+        "description": "نحن نقيّم أسعارك الحالية ونجري مقابلات مع العملاء ونقارن مع المشهد التنافسي الخاص بك.",
+        "title": "التشخيص"
+      }
+    },
+    "testimonials": {
+      "chen": {
+        "name": "سارة تشن",
+        "quote": "ساعدتنا PriceLayer على إعادة هيكلة أسعارنا من سعر ثابت إلى طبقات قائمة على الاستخدام. زادت إيرادات التوسع لدينا بنسبة 34% في الربع الأول.",
+        "title": "نائب رئيس الإيرادات، DataSync"
+      },
+      "heading": "موثوق به من قبل قادة SaaS",
+      "okafor": {
+        "name": "أميرة أوكافور",
+        "quote": "قلل إعادة تصميم التغليف دورة المبيعات لدينا بمقدار أسبوعين. يمكن للعملاء المحتملين اختيار الطبقة الصحيحة بأنفسهم دون عرض توضيحي.",
+        "title": "رئيس النمو، FormStack Pro"
+      },
+      "rivera": {
+        "name": "ماركوس ريفيرا",
+        "quote": "كنا نقلل سعر طبقتنا للمؤسسات بنسبة 40%. دفعت تدقيق PriceLayer نفسه في الشهر الأول.",
+        "title": "الرئيس التنفيذي، CloudQueue"
+      }
+    }
+  },
+  "Navigation": {
+    "about": "حول",
+    "blog": "المدونة",
+    "brandLayer": "الطبقة",
+    "brandPrice": "السعر",
+    "contact": "اتصل بنا",
+    "getStarted": "ابدأ الآن",
+    "home": "الرئيسية",
+    "toggleMenu": "تبديل القائمة"
+  },
+  "SignupPage": {
+    "arrRanges": {
+      "0to1m": "$0 - $1M ARR",
+      "100mPlus": "$100M+ ARR",
+      "1mTo5m": "$1M - $5M ARR",
+      "20mTo100m": "$20M - $100M ARR",
+      "5mTo20m": "$5M - $20M ARR",
+      "preRevenue": "ما قبل الإيرادات"
+    },
+    "form": {
+      "arrLabel": "نطاق ARR الحالي",
+      "arrPlaceholder": "اختر النطاق",
+      "challengeLabel": "أكبر تحدي في التسعير",
+      "challengePlaceholder": "على سبيل المثال، لسنا متأكدين مما إذا كانت طبقاتنا صحيحة، نعتقد أننا نقلل سعر المؤسسة...",
+      "companyLabel": "اسم الشركة",
+      "companyPlaceholder": "اسم الشركة",
+      "emailLabel": "بريد العمل الإلكتروني",
+      "emailPlaceholder": "you@company.com",
+      "nameLabel": "الاسم الكامل",
+      "namePlaceholder": "اسمك الكامل",
+      "submitButton": "طلب تشخيص مجاني"
+    },
+    "nextSteps": {
+      "diagnostic": {
+        "description": "نراجع نموذج التسعير الحالي الخاص بك ونحدد الفرص السريعة ونقيّم الفرصة.",
+        "title": "استدعاء التشخيص المجاني"
+      },
+      "heading": "ماذا يحدث بعد ذلك؟",
+      "proposal": {
+        "description": "بناءً على التشخيص، نبني خطة تفاعل مخصصة مع نتائج واضحة والجدول الزمني.",
+        "title": "اقتراح مخصص"
+      },
+      "transformation": {
+        "description": "نقوم بتنفيذ الاستراتيجية معاً — من البحث من خلال التصميم إلى دعم الطرح.",
+        "title": "تحويل التسعير"
+      }
+    },
+    "subtitle": "أخبرنا عن شركتك وسنجدول مراجعة تسعير مجانية مدتها 30 دقيقة.",
+    "success": {
+      "message": "سنتواصل معك في غضون يوم عمل واحد لجدولة استدعاء التشخيص المجاني الخاص بك.",
+      "title": "أنت في!"
+    },
+    "title": "ابدأ بتشخيص تسعير مجاني."
   }
 }
